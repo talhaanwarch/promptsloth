@@ -2,9 +2,9 @@
 
 A lazy prompt that fixes itself on open-weight models, driven entirely over [AcruxCore](https://github.com/AcruxCore/AcruxCore)'s MCP server.
 
-![Held-out accuracy by prompt version](images/heldout-accuracy.png)
+![Held-out accuracy by prompt version](images/heldout-accuracy-v2.png)
 
-The router reads a bank customer's message and returns one of the 77 [Banking77](https://huggingface.co/datasets/PolyAI/banking77) intents. Version 1 of its prompt is the label list and one instruction. Two optimizer runs ("naps") rewrote it, and an open judge decided each promotion:
+The router reads a bank customer's message and returns one of the 77 [Banking77](https://huggingface.co/datasets/PolyAI/banking77) intents. Version 1 of its prompt is the label list and one instruction. Two optimizer iterations rewrote it, and an open judge decided each promotion:
 
 | Role | Model (all open-weight) |
 |---|---|
@@ -17,12 +17,12 @@ Held-out results, 308 test-split messages the optimizer never saw, mean of two r
 | Prompt | Gemma 3 4B | Gemma 3 27B |
 |---|---|---|
 | v1 (`lazy`): labels only | 37% | 69% |
-| v2 (`fixed`): after nap 1 | 55% | 73% |
-| v3 (`fixed2`): after nap 2 | 60% | 74% |
+| v2 (`fixed`): after iteration 1 | 55% | 73% |
+| v3 (`fixed2`): after iteration 2 | 60% | 74% |
 
-Nap 1 fixed the reply format (the 4B model wrapped about 35% of v1 answers in braces). Nap 2 added a one-line definition for each intent, and routing rose from 55% to 60% on the 4B model (exact McNemar p = 0.013). `python3 analyse.py` prints every number and test.
+Iteration 1 fixed the reply format (the 4B model wrapped about 35% of v1 answers in braces). Iteration 2 added a one-line definition for each intent, and routing rose from 55% to 60% on the 4B model (exact McNemar p = 0.013). `python3 analyse.py` prints every number and test.
 
-![Demo: one nap's leaderboard, then v1 and v3 on the same 24 held-out messages](images/demo.gif)
+![Demo: one optimizer iteration's leaderboard, then v1 and v3 on the same 24 held-out messages](images/demo-v2.gif)
 
 ## Files
 
@@ -48,7 +48,7 @@ python3 sample.py
 python3 promptsloth.py setup
 ```
 
-The full order, including both naps, is in the docstring at the top of `promptsloth.py`.
+The full order, including both iterations, is in the docstring at the top of `promptsloth.py`.
 
 ## Data and licence
 

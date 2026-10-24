@@ -10,7 +10,7 @@ from analyse import load
 
 OUT = os.path.join(HERE, "images")
 INK, GRID = "#1b2733", "#e5e8eb"
-PROMPTS = [("lazy", "v1: labels only"), ("fixed", "v2: after nap 1"), ("fixed2", "v3: after nap 2")]
+PROMPTS = [("lazy", "v1: labels only"), ("fixed", "v2: after iteration 1"), ("fixed2", "v3: after iteration 2")]
 
 
 def style(ax):
@@ -42,12 +42,12 @@ for (name, vals), c in zip(parts.items(), colors):
 ax.invert_yaxis()
 ax.set_xlim(0, 100)
 ax.set_xlabel("Share of 308 held-out messages (mean of 2 runs)")
-ax.set_title("Gemma 3 4B: nap 1 fixed the format, nap 2 turned wrong labels into right ones",
+ax.set_title("Gemma 3 4B: iteration 1 fixed the format, iteration 2 turned wrong labels into right ones",
              loc="left", fontsize=12, color=INK)
 ax.legend(frameon=False, ncol=3, loc="upper center", bbox_to_anchor=(0.5, -0.18), fontsize=10)
 style(ax)
 fig.tight_layout()
-fig.savefig(os.path.join(OUT, "answer-breakdown.png"))
+fig.savefig(os.path.join(OUT, "answer-breakdown-v2.png"))
 
 # 2. Judge on training messages vs exact match on held-out messages
 judge = []
@@ -78,5 +78,5 @@ ax.grid(axis="y", color=GRID)
 ax.legend(frameon=False, loc="lower right", fontsize=10)
 style(ax)
 fig.tight_layout()
-fig.savefig(os.path.join(OUT, "judge-vs-heldout.png"))
+fig.savefig(os.path.join(OUT, "judge-vs-heldout-v2.png"))
 print([round(v, 1) for v in judge], [round(v, 1) for v in held], {k: [round(v, 1) for v in vs] for k, vs in parts.items()})

@@ -17,12 +17,12 @@ does not. The optimizer never sees a test message.
     export ACRUXCORE_API_KEY=...            # editor role; never commit it
     python3 sample.py                       # writes data/splits.json
     python3 promptsloth.py setup                                   # v1, alias `lazy`
-    # nap 1: format
+    # iteration 1: format
     python3 promptsloth.py dataset --round 1                       # prints the dataset id
     python3 promptsloth.py optimize --dataset <id> --baseline lazy \
         --model ps-gemma-3-4b-it --optimizer ps-gpt-oss-120b --judge rs-gemma-4-31b
     python3 promptsloth.py promote --run <run_id> --candidate <candidate_id> --alias fixed
-    # nap 2: routing definitions
+    # iteration 2: routing definitions
     python3 promptsloth.py dataset --round 2
     python3 promptsloth.py optimize --dataset <id> --baseline fixed \
         --model ps-gemma-3-4b-it --optimizer ps-gpt-oss-120b --judge rs-gemma-4-31b
@@ -124,7 +124,7 @@ def optimize(args):
     if err:
         raise SystemExit(started)
     run_id = UUID_RE.search(started).group(0)
-    print(f"optimize run {run_id} queued. Nap time 🦥")
+    print(f"optimize run {run_id} queued. The optimizer is working; go have a rest 🦥")
     last = None
     while True:
         text, _ = mcp.tool("get_optimize_report", {"run_id": run_id})
@@ -142,9 +142,9 @@ def optimize(args):
 
 
 def report(args):
-    """Print one nap's scores, straight from get_optimize_report."""
+    """Print one iteration's scores, straight from get_optimize_report."""
     r = mcp.tool_json("get_optimize_report", {"run_id": args.run})
-    print(f"nap {args.run[:8]}  judge: {r['judgeModel']}  status: {r['status']}")
+    print(f"optimize run {args.run[:8]}  judge: {r['judgeModel']}  status: {r['status']}")
     for b in r["baseline"]:
         print(f"  {b['label'] + ' (baseline)':22} {b['avgScore']:5.1f}")
     for c in r["candidates"]:

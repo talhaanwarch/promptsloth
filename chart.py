@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from analyse import load, acc
 
 MODELS = [("ps-gemma-3-4b-it", "Gemma 3 4B"), ("ps-gemma-3-27b-it", "Gemma 3 27B")]
-PROMPTS = [("lazy", "v1: labels only", "#9aa5b1"), ("fixed", "v2: nap 1", "#5b8def"), ("fixed2", "v3: nap 2", "#1f5fbf")]
+PROMPTS = [("lazy", "v1: labels only", "#9aa5b1"), ("fixed", "v2: iteration 1", "#5b8def"), ("fixed2", "v3: iteration 2", "#1f5fbf")]
 
 fig, ax = plt.subplots(figsize=(10, 5.6), dpi=150)
 w = 0.26
@@ -31,6 +31,6 @@ ax.grid(axis="y", color="#e5e8eb")
 ax.set_axisbelow(True)
 ax.legend(frameon=False, loc="upper left", fontsize=10)
 fig.tight_layout()
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images", "heldout-accuracy.png")
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images", "heldout-accuracy-v2.png")
 fig.savefig(out)
 print(out)
