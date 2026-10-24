@@ -1,0 +1,96 @@
+{
+ "runId": "df78584d-e6f1-408f-af8b-5c53dde6219c",
+ "status": "succeeded",
+ "judgeModel": "rs-gemma-4-31b",
+ "judgePromptVersionId": null,
+ "recommended": "58c57cd6-3216-44ed-8d9b-677d63c7246c",
+ "rejectedRewrites": [],
+ "baseline": [
+  {
+   "label": "fixed",
+   "model": "ps-gemma-3-4b-it",
+   "avgScore": 57.142857142857146,
+   "passRate": 0.5714285714285714
+  }
+ ],
+ "candidates": [
+  {
+   "candidateId": "58c57cd6-3216-44ed-8d9b-677d63c7246c",
+   "label": "candidate-A",
+   "scores": [
+    {
+     "model": "ps-gemma-3-4b-it",
+     "avgScore": 64.28571428571429,
+     "passRate": 0.6428571428571429,
+     "baselineAvgScore": 57.142857142857146,
+     "scoreDelta": 7.142857142857146,
+     "verdict": "improved"
+    }
+   ],
+   "beatsBaseline": true,
+   "rationale": "Added a concise one\u2011line definition for every intent, explicitly stating what the user is asking and how it differs from the most similar label. Kept the original instruction to return only the bare label and preserved the {{ message }} placeholder.",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Classify the following user query into **one** of the intent labels listed below. Respond with **only** the exact label (no punctuation, no surrounding text).\n\nIntents:\nRefund_not_showing_up = user says a refund they expected has not arrived.\nactivate_my_card = user wants to enable a newly received card.\nage_limit = user asks about eligibility or age requirements for an account.\napple_pay_or_google_pay = user inquires about using Apple\u202fPay or Google\u202fPay for top\u2011ups or payments.\natm_support = user asks which ATMs can be used or about ATM availability.\nautomatic_top_up = user wants to enable or locate the auto\u2011top\u2011up feature.\nbalance_not_updated_after_bank_transfer = balance hasn't changed after a bank transfer.\nbalance_not_updated_after_cheque_or_cash_deposit = balance hasn't changed after depositing cash or a cheque.\nbeneficiary_not_allowed = transfer to a beneficiary fails because the beneficiary is not allowed.\ncancel_transfer = user wants to cancel a transfer they have initiated.\ncard_about_to_expire = user asks about card expiration, replacement cost and timing.\ncard_acceptance = user asks where the card can be used (merchant acceptance).\ncard_arrival = ordered card has not arrived yet.\ncard_delivery_estimate = user asks how long delivery will take before the card arrives.\ncard_linking = user wants to link a card to the app.\ncard_not_working = user reports a general card malfunction (not contactless specific).\ncard_payment_fee_charged = user sees a fee on a card payment.\ncard_payment_not_recognised = user does not recognise a card payment.\ncard_payment_wrong_exchange_rate = user sees a wrong exchange rate on a card purchase.\ncard_swallowed = ATM has captured or ate the card.\ncash_withdrawal_charge = user sees a fee on a cash withdrawal.\ncash_withdrawal_not_recognised = user does not recognise a cash withdrawal.\nchange_pin = user wants to change their PIN.\ncompromised_card = user suspects fraud or unauthorized use of their card.\ncontactless_not_working = contactless function specifically not working.\ncountry_support = user asks if the service is available in a particular country.\ndeclined_card_payment = card payment was declined.\ndeclined_cash_withdrawal = cash withdrawal was declined.\ndeclined_transfer = transfer was declined.\ndirect_debit_payment_not_recognised = user does not recognise a direct\u2011debit payment.\ndisposable_card_limits = user asks about limits for disposable virtual cards.\nedit_personal_details = user wants to change personal/account details.\nexchange_charge = user asks about fees for currency exchange.\nexchange_rate = user asks how exchange rates are calculated or sourced.\nexchange_via_app = user wants to exchange currency using the app.\nextra_charge_on_statement = user sees an unexplained extra charge on their statement.\nfailed_transfer = transfer attempt failed (not pending or declined).\nfiat_currency_support = user asks about supported fiat currencies.\nget_disposable_virtual_card = user wants to create or obtain a disposable virtual card.\nget_physical_card = user asks about getting a physical card or PIN availability.\ngetting_spare_card = user asks about ordering or costs for an extra/spare card.\ngetting_virtual_card = user wants to obtain a virtual card.\nlost_or_stolen_card = user reports a lost or stolen card and needs replacement.\nlost_or_stolen_phone = user reports a lost or stolen phone affecting app usage.\norder_physical_card = user wants to order a new physical card.\npasscode_forgotten = user forgot their app passcode.\npending_card_payment = card payment is pending.\npending_cash_withdrawal = cash withdrawal is pending.\npending_top_up = top\u2011up is pending.\npending_transfer = transfer is pending.\npin_blocked = PIN attempts exceeded and PIN is blocked.\nreceiving_money = user asks about receiving money (e.g., payroll).\nrequest_refund = user asks to request a refund for a purchase.\nreverted_card_payment? = card payment was reverted/charged back.\nterminate_account = user wants to close/terminate their account.\ntop_up_by_bank_transfer_charge = user asks about fees for topping up via bank transfer.\ntop_up_by_card_charge = user asks about fees for topping up via card.\ntop_up_by_cash_or_cheque = user asks about topping up with cash or cheque.\ntop_up_failed = top\u2011up attempt failed.\ntop_up_limits = user asks about limits for top\u2011ups.\ntop_up_reverted = top\u2011up was reverted or cancelled.\ntopping_up_by_card = user asks who can top\u2011up their account with a card.\ntransaction_charged_twice = user reports a duplicate charge.\ntransfer_fee_charged = user sees a fee on a transfer.\ntransfer_into_account = user wants to move money from another bank into their account.\ntransfer_not_received_by_recipient = recipient hasn't received the transfer.\ntransfer_timing = user asks how long transfers take.\nunable_to_verify_identity = identity verification process fails.\nverify_my_identity = user asks which documents are accepted for verification.\nverify_source_of_funds = user asks about source\u2011of\u2011funds verification.\nverify_top_up = user asks how to verify a top\u2011up (e.g., code).\nvirtual_card_not_working = user reports virtual card not working.\nvisa_or_mastercard = user chooses between Visa and Mastercard.\nwhy_verify_identity = user asks why verification is required.\nwrong_amount_of_cash_received = ATM dispensed an incorrect cash amount.\nwrong_exchange_rate_for_cash_withdrawal = cash withdrawal had a wrong exchange rate.\n\nGive back **only** the intent label."
+    },
+    {
+     "role": "user",
+     "content": "{{ message }}"
+    }
+   ]
+  },
+  {
+   "candidateId": "973594c8-dd80-4750-a660-cdc4b022b825",
+   "label": "candidate-B",
+   "scores": [
+    {
+     "model": "ps-gemma-3-4b-it",
+     "avgScore": 50.64935064935065,
+     "passRate": 0.5064935064935064,
+     "baselineAvgScore": 57.142857142857146,
+     "scoreDelta": -6.493506493506494,
+     "verdict": "regressed"
+    }
+   ],
+   "beatsBaseline": false,
+   "rationale": "Re\u2011phrased the system prompt as a short instruction and listed each intent with a clear one\u2011sentence definition, highlighting the distinguishing aspect from similar intents. Placeholder and response format are unchanged.",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Your task is to map the user's query to **exactly one** of the intent labels below and reply with **only** that label (no extra text).\n\nIntents with brief definitions:\nRefund_not_showing_up \u2013 user reports a refund that has not arrived.\nactivate_my_card \u2013 user wants to activate a newly received card.\nage_limit \u2013 user asks about age or eligibility limits for an account.\napple_pay_or_google_pay \u2013 question about using Apple\u202fPay/Google\u202fPay for top\u2011ups or payments.\natm_support \u2013 inquiry about which ATMs can be used or ATM availability.\nautomatic_top_up \u2013 user looks for or wants to enable auto\u2011top\u2011up.\nbalance_not_updated_after_bank_transfer \u2013 balance unchanged after a bank transfer.\nbalance_not_updated_after_cheque_or_cash_deposit \u2013 balance unchanged after cash/cheque deposit.\nbeneficiary_not_allowed \u2013 transfer fails because beneficiary is not permitted.\ncancel_transfer \u2013 request to cancel an in\u2011progress transfer.\ncard_about_to_expire \u2013 question about card expiry, replacement time and cost.\ncard_acceptance \u2013 asks where the card is accepted for purchases.\ncard_arrival \u2013 ordered card has not yet arrived.\ncard_delivery_estimate \u2013 asks how long delivery will take before the card arrives.\ncard_linking \u2013 wants to link a card to the app.\ncard_not_working \u2013 general card malfunction not limited to contactless.\ncard_payment_fee_charged \u2013 sees a fee on a card payment.\ncard_payment_not_recognised \u2013 does not recognise a card payment.\ncard_payment_wrong_exchange_rate \u2013 card purchase used an incorrect exchange rate.\ncard_swallowed \u2013 ATM captured or ate the card.\ncash_withdrawal_charge \u2013 sees a fee on a cash withdrawal.\ncash_withdrawal_not_recognised \u2013 does not recognise a cash withdrawal.\nchange_pin \u2013 wants to change the PIN.\ncompromised_card \u2013 suspects fraudulent use of the card.\ncontactless_not_working \u2013 specifically reports contactless function not working.\ncountry_support \u2013 asks if the service is available in a certain country.\ndeclined_card_payment \u2013 card payment was declined.\ndeclined_cash_withdrawal \u2013 cash withdrawal was declined.\ndeclined_transfer \u2013 transfer was declined.\ndirect_debit_payment_not_recognised \u2013 does not recognise a direct\u2011debit payment.\ndisposable_card_limits \u2013 asks about limits for disposable virtual cards.\nedit_personal_details \u2013 wants to edit personal/account details.\nexchange_charge \u2013 asks about fees for currency exchange.\nexchange_rate \u2013 asks how exchange rates are calculated or sourced.\nexchange_via_app \u2013 wants to exchange currency via the app.\nextra_charge_on_statement \u2013 sees an unexplained extra charge on the statement.\nfailed_transfer \u2013 transfer attempt failed (not pending or declined).\nfiat_currency_support \u2013 asks which fiat currencies are supported.\nget_disposable_virtual_card \u2013 wants to create or obtain a disposable virtual card.\nget_physical_card \u2013 asks about obtaining a physical card or PIN.\ngetting_spare_card \u2013 asks about ordering an extra/spare card and its cost.\ngetting_virtual_card \u2013 wants a virtual card.\nlost_or_stolen_card \u2013 reports a lost or stolen card.\nlost_or_stolen_phone \u2013 reports a lost or stolen phone affecting app use.\norder_physical_card \u2013 wants to order a new physical card.\npasscode_forgotten \u2013 forgot the app passcode.\npending_card_payment \u2013 card payment is pending.\npending_cash_withdrawal \u2013 cash withdrawal is pending.\npending_top_up \u2013 top\u2011up is pending.\npending_transfer \u2013 transfer is pending.\npin_blocked \u2013 PIN blocked after too many wrong attempts.\nreceiving_money \u2013 asks about receiving money (e.g., payroll).\nrequest_refund \u2013 wants to request a refund for a purchase.\nreverted_card_payment? \u2013 card payment was reverted/charged back.\nterminate_account \u2013 wants to close the account.\ntop_up_by_bank_transfer_charge \u2013 asks about fees for top\u2011up via bank transfer.\ntop_up_by_card_charge \u2013 asks about fees for top\u2011up via card.\ntop_up_by_cash_or_cheque \u2013 asks about topping up with cash or cheque.\ntop_up_failed \u2013 top\u2011up attempt failed.\ntop_up_limits \u2013 asks about top\u2011up limits.\ntop_up_reverted \u2013 top\u2011up was reverted/cancelled.\ntopping_up_by_card \u2013 asks who can top\u2011up the account with a card.\ntransaction_charged_twice \u2013 reports a duplicate charge.\ntransfer_fee_charged \u2013 sees a fee on a transfer.\ntransfer_into_account \u2013 wants to move money from another bank into this account.\ntransfer_not_received_by_recipient \u2013 recipient hasn't received the transfer.\ntransfer_timing \u2013 asks how long transfers take.\nunable_to_verify_identity \u2013 identity verification process fails.\nverify_my_identity \u2013 asks which documents are accepted for verification.\nverify_source_of_funds \u2013 asks about source\u2011of\u2011funds verification.\nverify_top_up \u2013 asks how to verify a top\u2011up (e.g., code).\nvirtual_card_not_working \u2013 virtual card not functioning.\nvisa_or_mastercard \u2013 chooses between Visa and Mastercard.\nwhy_verify_identity \u2013 asks why identity verification is required.\nwrong_amount_of_cash_received \u2013 ATM gave an incorrect cash amount.\nwrong_exchange_rate_for_cash_withdrawal \u2013 cash withdrawal had wrong exchange rate.\n\nRespond with the exact intent label only."
+    },
+    {
+     "role": "user",
+     "content": "{{ message }}"
+    }
+   ]
+  },
+  {
+   "candidateId": "ff71d6ae-ea99-432e-bc6b-9aaaf9f26f89",
+   "label": "candidate-C",
+   "scores": [
+    {
+     "model": "ps-gemma-3-4b-it",
+     "avgScore": 55.84415584415584,
+     "passRate": 0.5584415584415584,
+     "baselineAvgScore": 57.142857142857146,
+     "scoreDelta": -1.2987012987013031,
+     "verdict": "flat"
+    }
+   ],
+   "beatsBaseline": false,
+   "rationale": "Provided a compact list where each intent is paired with a concise definition that differentiates it from similar intents. Kept the instruction to output only the label and preserved the placeholder.",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Determine which of the following intents best matches the user's request and output **only** that intent label (no punctuation, no extra text).\n\nIntents \u2013 one\u2011line clarifications:\nRefund_not_showing_up: refund expected but not received.\nactivate_my_card: enable a newly received card.\nage_limit: question about age or eligibility limits.\napple_pay_or_google_pay: using Apple/Google Pay for top\u2011up or payments.\natm_support: which ATMs can be used / ATM availability.\nautomatic_top_up: find or enable auto\u2011top\u2011up feature.\nbalance_not_updated_after_bank_transfer: balance unchanged after bank transfer.\nbalance_not_updated_after_cheque_or_cash_deposit: balance unchanged after cash/cheque deposit.\nbeneficiary_not_allowed: transfer blocked because beneficiary is not allowed.\ncancel_transfer: wants to cancel a pending transfer.\ncard_about_to_expire: asks about expiring card, replacement time and cost.\ncard_acceptance: where the card can be used for purchases.\ncard_arrival: ordered card has not arrived.\ncard_delivery_estimate: asks how long delivery will take before arrival.\ncard_linking: linking a card to the app.\ncard_not_working: general card malfunction (not contactless specific).\ncard_payment_fee_charged: fee shown on a card payment.\ncard_payment_not_recognised: does not recognise a card payment.\ncard_payment_wrong_exchange_rate: wrong exchange rate on a card purchase.\ncard_swallowed: ATM retained the card.\ncash_withdrawal_charge: fee shown on cash withdrawal.\ncash_withdrawal_not_recognised: does not recognise a cash withdrawal.\nchange_pin: wants to change PIN.\ncompromised_card: suspect fraudulent card use.\ncontactless_not_working: contactless function not working.\ncountry_support: service availability in a specific country.\ndeclined_card_payment: card payment was declined.\ndeclined_cash_withdrawal: cash withdrawal was declined.\ndeclined_transfer: transfer was declined.\ndirect_debit_payment_not_recognised: does not recognise a direct\u2011debit.\ndisposable_card_limits: limits for disposable virtual cards.\nedit_personal_details: change personal/account details.\nexchange_charge: fees for currency exchange.\nexchange_rate: how exchange rates are calculated or sourced.\nexchange_via_app: exchange currency via the app.\nextra_charge_on_statement: unexplained extra charge on statement.\nfailed_transfer: transfer failed (not pending/declined).\nfiat_currency_support: supported fiat currencies.\nget_disposable_virtual_card: create or obtain disposable virtual card.\nget_physical_card: obtain a physical card or PIN details.\ngetting_spare_card: order or cost of an extra/spare card.\ngetting_virtual_card: obtain a virtual card.\nlost_or_stolen_card: lost or stolen card needs replacement.\nlost_or_stolen_phone: lost or stolen phone affecting app.\norder_physical_card: order a new physical card.\npasscode_forgotten: forgot app passcode.\npending_card_payment: card payment pending.\npending_cash_withdrawal: cash withdrawal pending.\npending_top_up: top\u2011up pending.\npending_transfer: transfer pending.\npin_blocked: PIN blocked after too many wrong attempts.\nreceiving_money: how to receive money (e.g., payroll).\nrequest_refund: request a refund for a purchase.\nreverted_card_payment?: card payment was reverted/charged back.\nterminate_account: close/terminate account.\ntop_up_by_bank_transfer_charge: fee for topping up via bank transfer.\ntop_up_by_card_charge: fee for topping up via card.\ntop_up_by_cash_or_cheque: top\u2011up with cash or a cheque.\ntop_up_failed: top\u2011up attempt failed.\ntop_up_limits: top\u2011up limits inquiry.\ntop_up_reverted: top\u2011up reverted/cancelled.\ntopping_up_by_card: who can top\u2011up the account with a card.\ntransaction_charged_twice: duplicate charge reported.\ntransfer_fee_charged: fee applied to a transfer.\ntransfer_into_account: move money from another bank into this account.\ntransfer_not_received_by_recipient: recipient hasn't got the transfer.\ntransfer_timing: how long transfers take.\nunable_to_verify_identity: identity verification process fails.\nverify_my_identity: which documents are accepted for verification.\nverify_source_of_funds: source\u2011of\u2011funds verification question.\nverify_top_up: how to verify a top\u2011up (code, etc.).\nvirtual_card_not_working: virtual card not functioning.\nvisa_or_mastercard: choose between Visa and Mastercard.\nwhy_verify_identity: why verification is required.\nwrong_amount_of_cash_received: ATM gave wrong cash amount.\nwrong_exchange_rate_for_cash_withdrawal: cash withdrawal used wrong exchange rate.\n\nReturn only the intent label."
+    },
+    {
+     "role": "user",
+     "content": "{{ message }}"
+    }
+   ]
+  }
+ ]
+}

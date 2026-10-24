@@ -1,0 +1,98 @@
+Optimize run 2f5737ef-6d0d-4e6a-86ed-3f1b9113cb6c succeeded. 3 of 3 rewrite(s) beat the baseline. Recommended: candidate-B (candidate_id f2ce43ab-963e-4cb9-b7e0-3623aa749f57), +20.8 on ps-gemma-3-4b-it. Promote it with promote_optimize_candidate only if the user agrees.
+
+{
+  "runId": "2f5737ef-6d0d-4e6a-86ed-3f1b9113cb6c",
+  "status": "succeeded",
+  "judgeModel": "rs-gemma-4-31b",
+  "judgePromptVersionId": null,
+  "recommended": "f2ce43ab-963e-4cb9-b7e0-3623aa749f57",
+  "rejectedRewrites": [],
+  "baseline": [
+    {
+      "label": "lazy",
+      "model": "ps-gemma-3-4b-it",
+      "avgScore": 36.36363636363637,
+      "passRate": 0.36363636363636365
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "8b556bd1-c78d-48d0-b1bb-23d0ae4c7c58",
+      "label": "candidate-A",
+      "scores": [
+        {
+          "model": "ps-gemma-3-4b-it",
+          "avgScore": 54.54545454545455,
+          "passRate": 0.5454545454545454,
+          "baselineAvgScore": 36.36363636363637,
+          "scoreDelta": 18.18181818181818,
+          "verdict": "improved"
+        }
+      ],
+      "beatsBaseline": true,
+      "rationale": "Added a comprehensive list of intents and explicit disambiguation rules for common confusions (card activation vs. not working, contactless vs. payment issues, transfer vs. top‑up, fee vs. exchange rate, pending vs. declined vs. failed, arrival vs. estimate). This guides the model to pick the correct single label and suppress any additional output.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a classifier for banking‑related user inquiries. Choose **exactly one** intent from the following list and output **only the intent label** (spelling and case must match exactly):\nRefund_not_showing_up, activate_my_card, age_limit, apple_pay_or_google_pay, atm_support, automatic_top_up, balance_not_updated_after_bank_transfer, balance_not_updated_after_cheque_or_cash_deposit, beneficiary_not_allowed, cancel_transfer, card_about_to_expire, card_acceptance, card_arrival, card_delivery_estimate, card_linking, card_not_working, card_payment_fee_charged, card_payment_not_recognised, card_payment_wrong_exchange_rate, card_swallowed, cash_withdrawal_charge, cash_withdrawal_not_recognised, change_pin, compromised_card, contactless_not_working, country_support, declined_card_payment, declined_cash_withdrawal, declined_transfer, direct_debit_payment_not_recognised, disposable_card_limits, edit_personal_details, exchange_charge, exchange_rate, exchange_via_app, extra_charge_on_statement, failed_transfer, fiat_currency_support, get_disposable_virtual_card, get_physical_card, getting_spare_card, getting_virtual_card, lost_or_stolen_card, lost_or_stolen_phone, order_physical_card, passcode_forgotten, pending_card_payment, pending_cash_withdrawal, pending_top_up, pending_transfer, pin_blocked, receiving_money, request_refund, reverted_card_payment?, supported_cards_and_currencies, terminate_account, top_up_by_bank_transfer_charge, top_up_by_card_charge, top_up_by_cash_or_cheque, top_up_failed, top_up_limits, top_up_reverted, topping_up_by_card, transaction_charged_twice, transfer_fee_charged, transfer_into_account, transfer_not_received_by_recipient, transfer_timing, unable_to_verify_identity, verify_my_identity, verify_source_of_funds, verify_top_up, virtual_card_not_working, visa_or_mastercard, why_verify_identity, wrong_amount_of_cash_received, wrong_exchange_rate_for_cash_withdrawal.\n\n**Disambiguation rules**:\n- **Card activation vs. card not working**: If the user mentions needing to enable or activate the card, use `activate_my_card`. If the card is already active but cannot be used for any transaction, use `card_not_working`.\n- **Contactless vs. general card payment issues**: Use `contactless_not_working` only when the problem is explicitly about the contactless feature. All other payment failures fall under `declined_card_payment`, `pending_card_payment`, `card_payment_not_recognised`, `card_payment_fee_charged`, `card_payment_wrong_exchange_rate`, or `reverted_card_payment?` as appropriate.\n- **Transfer vs. top‑up**: Transfer‑related queries involve moving money **between accounts** or to another person (`transfer_*`, `cancel_transfer`, `failed_transfer`, `beneficiary_not_allowed`). Top‑up queries involve adding money **to the app** from a card, bank, cash or cheque (`top_up_*`, `automatic_top_up`, `verify_top_up`).\n- **Fee vs. exchange‑rate**: Questions about **fees** charged for a transaction, top‑up or transfer use the `*_charge` intents (e.g., `card_payment_fee_charged`, `top_up_by_card_charge`, `transfer_fee_charged`). Questions about **exchange rates** or wrong rates use `exchange_rate`, `exchange_charge`, `card_payment_wrong_exchange_rate`, `wrong_exchange_rate_for_cash_withdrawal`.\n- **Pending vs. declined vs. failed**: `pending_*` is for actions that are still in a waiting state. `declined_*` is for actions that were rejected immediately. `failed_*` is for actions that attempted but did not succeed and are not pending.\n- **Card arrival vs. card delivery estimate**: Use `card_arrival` when the user says the card has not arrived yet. Use `card_delivery_estimate` when asking how long delivery will take.\n- **Virtual vs. disposable virtual**: `getting_virtual_card` and `get_disposable_virtual_card` refer to obtaining those cards. `virtual_card_not_working` and `disposable_card_limits` address usage problems.\n- **Verification**: `verify_my_identity` is about what documents are accepted. `why_verify_identity` asks for the reason verification is needed. `unable_to_verify_identity` is when the verification process fails.\n\nReturn ONLY the chosen intent label, with no extra text, punctuation, or explanation."
+        },
+        {
+          "role": "user",
+          "content": "{{ message }}"
+        }
+      ]
+    },
+    {
+      "candidateId": "f2ce43ab-963e-4cb9-b7e0-3623aa749f57",
+      "label": "candidate-B",
+      "scores": [
+        {
+          "model": "ps-gemma-3-4b-it",
+          "avgScore": 57.142857142857146,
+          "passRate": 0.5714285714285714,
+          "baselineAvgScore": 36.36363636363637,
+          "scoreDelta": 20.77922077922078,
+          "verdict": "improved"
+        }
+      ],
+      "beatsBaseline": true,
+      "rationale": "Re‑wrote the system prompt to keep the intent list but added a concise “Key clarification points” section that directly addresses the most common ambiguities, ensuring the model knows when to pick each similar‑sounding label.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Classify the following user query into **one** of the intent labels listed below. Respond with **only** the exact label (no punctuation, no surrounding text).\n\nIntents:\nRefund_not_showing_up, activate_my_card, age_limit, apple_pay_or_google_pay, atm_support, automatic_top_up, balance_not_updated_after_bank_transfer, balance_not_updated_after_cheque_or_cash_deposit, beneficiary_not_allowed, cancel_transfer, card_about_to_expire, card_acceptance, card_arrival, card_delivery_estimate, card_linking, card_not_working, card_payment_fee_charged, card_payment_not_recognised, card_payment_wrong_exchange_rate, card_swallowed, cash_withdrawal_charge, cash_withdrawal_not_recognised, change_pin, compromised_card, contactless_not_working, country_support, declined_card_payment, declined_cash_withdrawal, declined_transfer, direct_debit_payment_not_recognised, disposable_card_limits, edit_personal_details, exchange_charge, exchange_rate, exchange_via_app, extra_charge_on_statement, failed_transfer, fiat_currency_support, get_disposable_virtual_card, get_physical_card, getting_spare_card, getting_virtual_card, lost_or_stolen_card, lost_or_stolen_phone, order_physical_card, passcode_forgotten, pending_card_payment, pending_cash_withdrawal, pending_top_up, pending_transfer, pin_blocked, receiving_money, request_refund, reverted_card_payment?, supported_cards_and_currencies, terminate_account, top_up_by_bank_transfer_charge, top_up_by_card_charge, top_up_by_cash_or_cheque, top_up_failed, top_up_limits, top_up_reverted, topping_up_by_card, transaction_charged_twice, transfer_fee_charged, transfer_into_account, transfer_not_received_by_recipient, transfer_timing, unable_to_verify_identity, verify_my_identity, verify_source_of_funds, verify_top_up, virtual_card_not_working, visa_or_mastercard, why_verify_identity, wrong_amount_of_cash_received, wrong_exchange_rate_for_cash_withdrawal.\n\n**Key clarification points**:\n- Use `activate_my_card` only when the user mentions needing to enable the card. Use `card_not_working` for any other inability to use the card.\n- Use `contactless_not_working` only when the issue is specifically with the contactless function.\n- Distinguish transfer‑related intents (`transfer_*`, `cancel_transfer`, `failed_transfer`, `beneficiary_not_allowed`) from top‑up intents (`top_up_*`, `automatic_top_up`, `verify_top_up`).\n- Fee‑related questions map to `*_charge` intents; exchange‑rate questions map to `exchange_rate`, `exchange_charge`, `card_payment_wrong_exchange_rate`, or `wrong_exchange_rate_for_cash_withdrawal`.\n- Pending states use `pending_*`, immediate rejections use `declined_*`, and attempts that did not succeed and are not pending use `failed_*`.\n- Card shipping: `card_arrival` for \"hasn't arrived\"; `card_delivery_estimate` for \"how long will it take\".\n- Verification: `verify_my_identity` = which documents; `why_verify_identity` = reason; `unable_to_verify_identity` = process fails.\n\nGive back **only** the intent label."
+        },
+        {
+          "role": "user",
+          "content": "{{ message }}"
+        }
+      ]
+    },
+    {
+      "candidateId": "cc964606-e3d7-4cb8-a104-b8ec60dedd94",
+      "label": "candidate-C",
+      "scores": [
+        {
+          "model": "ps-gemma-3-4b-it",
+          "avgScore": 53.896103896103895,
+          "passRate": 0.538961038961039,
+          "baselineAvgScore": 36.36363636363637,
+          "scoreDelta": 17.53246753246753,
+          "verdict": "improved"
+        }
+      ],
+      "beatsBaseline": true,
+      "rationale": "Provided a structured decision guide with numbered sections, making the distinctions between similar intents explicit while preserving the full intent list and the {{ message }} placeholder.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You must classify the user's message into a single intent from the catalog below and output **just** that label (exact spelling, no extra characters).\n\nCatalog:\nRefund_not_showing_up, activate_my_card, age_limit, apple_pay_or_google_pay, atm_support, automatic_top_up, balance_not_updated_after_bank_transfer, balance_not_updated_after_cheque_or_cash_deposit, beneficiary_not_allowed, cancel_transfer, card_about_to_expire, card_acceptance, card_arrival, card_delivery_estimate, card_linking, card_not_working, card_payment_fee_charged, card_payment_not_recognised, card_payment_wrong_exchange_rate, card_swallowed, cash_withdrawal_charge, cash_withdrawal_not_recognised, change_pin, compromised_card, contactless_not_working, country_support, declined_card_payment, declined_cash_withdrawal, declined_transfer, direct_debit_payment_not_recognised, disposable_card_limits, edit_personal_details, exchange_charge, exchange_rate, exchange_via_app, extra_charge_on_statement, failed_transfer, fiat_currency_support, get_disposable_virtual_card, get_physical_card, getting_spare_card, getting_virtual_card, lost_or_stolen_card, lost_or_stolen_phone, order_physical_card, passcode_forgotten, pending_card_payment, pending_cash_withdrawal, pending_top_up, pending_transfer, pin_blocked, receiving_money, request_refund, reverted_card_payment?, supported_cards_and_currencies, terminate_account, top_up_by_bank_transfer_charge, top_up_by_card_charge, top_up_by_cash_or_cheque, top_up_failed, top_up_limits, top_up_reverted, topping_up_by_card, transaction_charged_twice, transfer_fee_charged, transfer_into_account, transfer_not_received_by_recipient, transfer_timing, unable_to_verify_identity, verify_my_identity, verify_source_of_funds, verify_top_up, virtual_card_not_working, visa_or_mastercard, why_verify_identity, wrong_amount_of_cash_received, wrong_exchange_rate_for_cash_withdrawal.\n\n**Decision guide**:\n1. **Card status** – If the user says the card needs activation, choose `activate_my_card`. If the card is active but unusable (except contactless), choose `card_not_working`. If only the contactless feature fails, choose `contactless_not_working`.\n2. **Payment problems** – `declined_card_payment` for immediate declines, `pending_card_payment` for waiting, `card_payment_not_recognised` when the merchant is unknown, `card_payment_fee_charged` for fee complaints, `card_payment_wrong_exchange_rate` for wrong FX on a payment, `reverted_card_payment?` for payments that were reversed.\n3. **Transfer vs. Top‑up** – Queries about moving money between accounts, recipients, or timing use the `transfer_*` family. Adding money to the app uses `top_up_*` family. `cancel_transfer` and `failed_transfer` are for transfers only.\n4. **Fees vs. Exchange** – Any mention of a charge/fee maps to a `*_charge` intent. Questions about how rates are set or appear wrong map to `exchange_rate` or `*_wrong_exchange_rate` intents.\n5. **Pending vs. Declined vs. Failed** – Use `pending_*` when the action is still waiting. Use `declined_*` when it was rejected instantly. Use `failed_*` when it attempted and stopped without being pending.\n6. **Card delivery** – `card_arrival` for \"my card hasn't arrived\"; `card_delivery_estimate` for \"how long will delivery take\".\n7. **Verification** – `verify_my_identity` = acceptable documents, `why_verify_identity` = purpose of verification, `unable_to_verify_identity` = verification cannot be completed.\n\nOutput ONLY the appropriate intent label."
+        },
+        {
+          "role": "user",
+          "content": "{{ message }}"
+        }
+      ]
+    }
+  ]
+}

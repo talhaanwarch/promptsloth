@@ -1,0 +1,41 @@
+optimize run df78584d-e6f1-408f-af8b-5c53dde6219c queued. Nap time 🦥
+  19:04:25 queued
+  19:06:27 running
+  19:19:11 succeeded
+Optimize run df78584d-e6f1-408f-af8b-5c53dde6219c succeeded. 1 of 3 rewrite(s) beat the baseline. Recommended: candidate-A (candidate_id 58c57cd6-3216-44ed-8d9b-677d63c7246c), +7.1 on ps-gemma-3-4b-it. Promote it with promote_optimize_candidate only if the user agrees.
+
+{
+  "runId": "df78584d-e6f1-408f-af8b-5c53dde6219c",
+  "status": "succeeded",
+  "judgeModel": "rs-gemma-4-31b",
+  "judgePromptVersionId": null,
+  "recommended": "58c57cd6-3216-44ed-8d9b-677d63c7246c",
+  "rejectedRewrites": [],
+  "baseline": [
+    {
+      "label": "fixed",
+      "model": "ps-gemma-3-4b-it",
+      "avgScore": 57.142857142857146,
+      "passRate": 0.5714285714285714
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "58c57cd6-3216-44ed-8d9b-677d63c7246c",
+      "label": "candidate-A",
+      "scores": [
+        {
+          "model": "ps-gemma-3-4b-it",
+          "avgScore": 64.28571428571429,
+          "passRate": 0.6428571428571429,
+          "baselineAvgScore": 57.142857142857146,
+          "scoreDelta": 7.142857142857146,
+          "verdict": "improved"
+        }
+      ],
+      "beatsBaseline": true,
+      "rationale": "Added a concise one‑line definition for every intent, explicitly stating what the user is asking and how it differs from the most similar label. Kept the original instruction to return only the bare label and preserved the {{ message }} placeholder.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Classify the following user query into **one** of the intent labels listed below. Respond with **only** the exact label (no punctuation, no surrounding text).\n\nIntents:\nRefund_not_showing_up = user says a refund they expected has not arrived.\nactivate_my_card = user wants to enable a newly received card.\nage_limit = user asks about eligibility or age requirements for an account.\napple_pay_or_google_pay = user inquires about using Apple Pay or Google Pay for top‑ups or payments.\natm_support = user asks which ATMs can be used or about ATM availability.\nautomatic_top_up = user wants to enable or locate the auto‑top‑up feature.\nbalance_not_updated_after_bank_transfer = balance hasn't changed after a bank transfer.\nbalance_not_updated_after_cheque_or_cash_deposit = balance hasn't changed after depositing cash or a cheque.\nbeneficiary_not_allowed = transfer to a beneficiary fails because the beneficiary is not allowed.\ncancel_transfer = user wants to cancel a transfer they have initiated.\ncard_about_to_expire = user asks about card expiration, replacement cost and timing.\ncard_acceptance = user asks where the card can be used (merchant acceptance).\ncard_arrival = ordered card has not arrived yet.\ncard_delivery_estimate = user asks how long delivery will take before the card arrives.\ncard_linking = user wants to link a card to the app.\ncard_not_working = user reports a general card malfunction (not contactless specific).\ncard_payment_fee_charged = user sees a fee on a card payment.\ncard_payment_not_recognised = user does not recognise a card payment.\ncard_payment_wrong_exchange_rate = user sees a wrong exchange rate on a card purchase.\ncard_swallowed = ATM has captured or ate the card.\ncash_withdrawal_charge = user sees a fee on a cash withdrawal.\ncash_withdrawal_not_recognised = user does not recognise a cash withdrawal.\nchange_pin = user wants to change their PIN.\ncompromised_card = user suspects fraud or unauthorized use of their card.\ncontactless_not_working = contactless function specifically not working.\ncountry_support = user asks if the service is available in a particular country.\ndeclined_card_payment = card payment was declined.\ndeclined_cash_withdrawal = cash withdrawal was declined.\ndeclined_transfer = transfer was declined.\ndirect_debit_payment_not_recognised = user does not recognise a direct‑debit payment.\ndisposable_card_limits = user asks about limits for disposable virtual cards.\nedit_personal_details = user wants to change personal/account details.\nexch

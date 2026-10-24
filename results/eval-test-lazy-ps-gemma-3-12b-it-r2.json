@@ -1,0 +1,2877 @@
+{
+ "summary": {
+  "alias": "lazy",
+  "model": "ps-gemma-3-12b-it",
+  "split": "test",
+  "repeat": 2,
+  "n": 308,
+  "errors": 182,
+  "correct": 77,
+  "accuracy": 0.6111,
+  "invalid_labels": 0,
+  "malformed": 8,
+  "empty_retries": 1504,
+  "cache_hits": 0,
+  "cost_usd": 0.003465,
+  "avg_tokens": 575,
+  "seconds": 2663.4
+ },
+ "rows": [
+  {
+   "text": "I cannot prove my own identity.",
+   "intent": "unable_to_verify_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 15a8f326-4856-46c3-ac69-3c472879d8ac. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850364-gYmZrwKekaOXgRHZ31lD\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Will topping up by transfer lead to a charge on my account?",
+   "intent": "top_up_by_bank_transfer_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id abc09877-6502-4932-bcdc-324613885238. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850364-6jep9MC8Wmfp5WnZZieZ\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I want to get an item refunded",
+   "intent": "request_refund",
+   "answer": "request_refund",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "ee73dc48-cfb2-45cc-9acf-d15a74b5deb9",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.865e-05,
+   "cache": "miss",
+   "tokens": 565,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can you help me find top up by cash deposit?",
+   "intent": "top_up_by_cash_or_cheque",
+   "answer": "top_up_by_cash_or_cheque",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "c46ca599-f75d-476c-9e0d-2bafa5edc67d",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3.02e-05,
+   "cache": "miss",
+   "tokens": 578,
+   "empty_retries": 0
+  },
+  {
+   "text": "What do I need to do to transfer my paycheck to my account?",
+   "intent": "receiving_money",
+   "answer": "transfer_into_account",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "e388e83a-0a3d-461e-a1fd-2db58b549b52",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.93e-05,
+   "cache": "miss",
+   "tokens": 574,
+   "empty_retries": 0
+  },
+  {
+   "text": "My disposable virtual card will not work",
+   "intent": "virtual_card_not_working",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id eb19771e-7b36-47aa-b738-912997a7b2aa. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850364-YZWdLCA4nlLK82QlzKLG\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "The app reverted my action when I topped up.",
+   "intent": "top_up_reverted",
+   "answer": "top_up_reverted",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "fa47124c-e87c-4f38-be27-a4f4f7e5d59d",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 571,
+   "empty_retries": 0
+  },
+  {
+   "text": "I am not Happy with this product can i get a refund?",
+   "intent": "request_refund",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000151. Open it with get_trace, trace_id 5b8ce277-1217-4996-af77-8e761ae5d527. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850365-QpqvbZMSQntjDuolu7La\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How many disposable cards per day am I allowed to have?",
+   "intent": "disposable_card_limits",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 99730f70-7d61-41b8-a4b2-e37b79529a7c. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850366-6uCS17P3IlkrtfVUnzof\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What is the reason for this fee I got after a simple cash withdrawal?",
+   "intent": "cash_withdrawal_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id 258919b8-df3c-4a34-a80a-05dd8414e97e. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850366-U6rpadyPr1lYXPFrA2ra\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How many miles away is the ATM?",
+   "intent": "atm_support",
+   "answer": "atm_support",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "4465b261-5911-42e3-9622-19fcff9d3e85",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.87e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "How can I fund my top-up account using my bank account?",
+   "intent": "transfer_into_account",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 6ef2bd50-50b0-4aff-b9c4-d5ec0626a480. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850445-Jk0YPpmuZkfRww7xBIwl\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "still waiting on that card",
+   "intent": "card_arrival",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000143. Open it with get_trace, trace_id ac63505c-8d70-4bca-a1c6-6079fbd64e62. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850446-KGCaoEwYtQPGIjPinIVi\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How old do we have to be?",
+   "intent": "age_limit",
+   "answer": "age_limit",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "02456272-4ab6-4c60-8da9-a2005b828a59",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.87e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "How can I resolve a problem where my card won't go through at all?",
+   "intent": "card_not_working",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000149. Open it with get_trace, trace_id 320d7247-bc44-4384-b114-a00322165937. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850446-NrE7psJSUwGXq2tQUtIb\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Does every place of business accept this card?",
+   "intent": "card_acceptance",
+   "answer": "card_acceptance",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "c7b36aea-d3dd-4f6a-8708-b2aaa85ff54a",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.875e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do I transfer funds from my American Express into my account?",
+   "intent": "supported_cards_and_currencies",
+   "answer": "transfer_into_account",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "6221e852-e68c-4d5f-a85a-394dcabd03f8",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "Why am I being charged more ?",
+   "intent": "card_payment_wrong_exchange_rate",
+   "answer": "extra_charge_on_statement",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "f311e826-704f-4d7d-9087-158327b29ee4",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 569,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can you tell me if my top-up has been cancelled?",
+   "intent": "top_up_reverted",
+   "answer": "top_up_reverted",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "305498d1-a337-4af9-8964-c4c5e258b793",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.94e-05,
+   "cache": "miss",
+   "tokens": 574,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can I link another card to my account?",
+   "intent": "card_linking",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id c2f25a4f-41b6-4b54-a7fb-2b3344cba273. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850450-2nRgaMjDc8J80EEo89NF\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "The balance on my account wasn't updated after I made a depost.",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001485. Open it with get_trace, trace_id b4151858-d907-4b5c-a91a-e221dcc9de4d. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850449-LpgPQtc00J2iPPtLUL2c\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I requested a refund from a merchant days ago but I do not see it in my account.",
+   "intent": "Refund_not_showing_up",
+   "answer": "refund_not_showing_up",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "5419f022-8e20-4988-a52b-df13415f93e1",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.985e-05,
+   "cache": "miss",
+   "tokens": 581,
+   "empty_retries": 0
+  },
+  {
+   "text": "I didn't get the right amount at the ATM.",
+   "intent": "wrong_amount_of_cash_received",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 63c13c51-db08-4229-b0d7-12e77ddce788. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850453-cx5tqGv7IAbaJ1WgKIcG\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where can the card be used?",
+   "intent": "card_acceptance",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id e630ffdc-be2b-4cc3-a771-d851aa0c4564. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850526-Da3FdhyXlyj0VLn0STFV\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I am still waiting for a money transfer to show",
+   "intent": "pending_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001495. Open it with get_trace, trace_id af838387-cbad-4f71-bd27-d432ebf8f28b. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850526-4jDba2wFVnJDWIXujlC6\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "why do i not have a virtual card",
+   "intent": "getting_virtual_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 948b1813-e870-4116-bc0c-521969c54c6c. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850528-9TKAvLoBT8yAbQI6ssYQ\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I'm tired of all the problems I've had. I want to quit this account!",
+   "intent": "terminate_account",
+   "answer": "terminate_account",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "0a88b5cc-e52e-4b14-af8e-791b8a7e65ca",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.93e-05,
+   "cache": "miss",
+   "tokens": 578,
+   "empty_retries": 0
+  },
+  {
+   "text": "May I choose when it's delivered?",
+   "intent": "card_delivery_estimate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 60989c2a-0b22-4f57-ae70-d3eb76f7db78. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850530-rIbqHgSyeR3ZPq0UxYiA\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What currencies are used in your exchange?",
+   "intent": "fiat_currency_support",
+   "answer": "supported_cards_and_currencies",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "d551ce4f-9c12-4620-a8b7-d65d6fa48478",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.93e-05,
+   "cache": "miss",
+   "tokens": 570,
+   "empty_retries": 0
+  },
+  {
+   "text": "Tell me why my transfer failed!",
+   "intent": "failed_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 8baeaeed-bb88-4b39-827e-a5b7d71c1413. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850533-ug2W4P14BzWYPHy5jZre\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "The app wouldn't accept my top up.",
+   "intent": "top_up_reverted",
+   "answer": "top_up_failed",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "ec5d3028-7e66-4cbe-9dc9-f76c07130c2e",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.91e-05,
+   "cache": "miss",
+   "tokens": 570,
+   "empty_retries": 0
+  },
+  {
+   "text": "I want this amount reversed out of my account.",
+   "intent": "request_refund",
+   "answer": "request_refund",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "6206a41f-8edf-4e0f-b7dd-9f859fe2f5aa",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.555e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "Does it cost to exchange currencies with this card?",
+   "intent": "exchange_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id b71e4081-a8d1-4433-bc6a-8b956b43e55c. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850537-nrkp0pIgm358fI8r9taU\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I did not get the right amount of money when I used a different country's currency.",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id 286e9a31-7e78-473c-971e-8b48d0973611. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850606-AK2IVsc1ONfRBtdohtWE\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can you tell my why my card payment has been reverted.",
+   "intent": "reverted_card_payment?",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 9ff2b920-72d7-4422-8a55-f2085ecfa3d1. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850607-1PmLaLINhquc0bqAqriA\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "For physical cards, do you charge?",
+   "intent": "order_physical_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 27179600-75d9-463a-a3a5-3058e2a041cc. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850609-FY5APsbiKGYGbwd80Gc1\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can you look at my account ans see why my card was declined",
+   "intent": "declined_card_payment",
+   "answer": "declined_card_payment",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "429dd1ea-5d60-4afb-a4d0-4926dd8f1c4d",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.94e-05,
+   "cache": "miss",
+   "tokens": 574,
+   "empty_retries": 0
+  },
+  {
+   "text": "What is this charge on my account for a cash withdrawl?",
+   "intent": "cash_withdrawal_charge",
+   "answer": "cash_withdrawal_not_recognised",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "1d6961b8-bc46-4569-98ed-d3588a3024a4",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.97e-05,
+   "cache": "miss",
+   "tokens": 576,
+   "empty_retries": 0
+  },
+  {
+   "text": "Whats the delivery time to the United States?",
+   "intent": "card_delivery_estimate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000149. Open it with get_trace, trace_id f35d898c-978a-44fa-89d7-e48db03e3b64. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850614-4q0cbCpnGtr31mEOnuZd\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why is the exchange rate wrong when I purchase something abroad?",
+   "intent": "card_payment_wrong_exchange_rate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 93686d0c-540d-4577-ba8b-e2fd0ae36a8b. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850614-LkYQ04ImdLusC25di1fq\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where is my deposit?",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000143. Open it with get_trace, trace_id dc6aaba5-dcb0-431a-9cfd-7834443e31da. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850618-zB2yJaQTZpQJOfhClGio\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What can I pay with? Does cash work?",
+   "intent": "top_up_by_cash_or_cheque",
+   "answer": "card_acceptance",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "c4cac67d-a491-4301-9e26-ba4e70d7bc00",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.88e-05,
+   "cache": "miss",
+   "tokens": 568,
+   "empty_retries": 0
+  },
+  {
+   "text": "My transfer to beneficiary didn't go through",
+   "intent": "beneficiary_not_allowed",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 4627eadd-18a1-4073-848b-2e6da5dc72aa. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850688-eaCvLpAeNbetLVpNZDwQ\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can you explain disposable cards?",
+   "intent": "get_disposable_virtual_card",
+   "answer": "getting_virtual_card",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "8228c641-326b-4cbf-8952-9dc1f6d18ab0",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.89e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "Where can I find the source of my available money?",
+   "intent": "verify_source_of_funds",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id bd415289-3d99-4bcc-9640-03d9e348f004. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850689-szZ9Rt4439W9D6wZw9jy\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Help me set up a new PIN?",
+   "intent": "change_pin",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001485. Open it with get_trace, trace_id 599522b3-9953-4a2f-b06c-93d6f483a54b. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850690-X7VnyasUVDwaw0ZGI6I2\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can you explain the virtual cards limit?",
+   "intent": "disposable_card_limits",
+   "answer": "top_up_limits",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "5f218569-00f5-4e27-8bd3-a916e53cdb95",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.9e-05,
+   "cache": "miss",
+   "tokens": 568,
+   "empty_retries": 0
+  },
+  {
+   "text": "How long does it take to process transfers from Europe?",
+   "intent": "transfer_timing",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id f02a20ec-20fe-4b8b-9afc-56ac51b77b23. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850695-2YdPjqQrIKEyFf0o6Hh8\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is it possible to get a transfer from SWIFT?",
+   "intent": "top_up_by_bank_transfer_charge",
+   "answer": "transfer_timing",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "61157e13-eab4-4c4d-b96b-455694b72b24",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.885e-05,
+   "cache": "miss",
+   "tokens": 569,
+   "empty_retries": 0
+  },
+  {
+   "text": "I just lost my wallet and I see that they are already withdrawing money from my account. How can I stop this?",
+   "intent": "cash_withdrawal_not_recognised",
+   "answer": "lost_or_stolen_card",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "aa08e899-e0aa-48a4-b27f-06361fc9a1c8",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.7e-05,
+   "cache": "miss",
+   "tokens": 592,
+   "empty_retries": 0
+  },
+  {
+   "text": "Am I allowed to give my daughter one of my cards to use?",
+   "intent": "getting_spare_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 2cd5086a-8d22-4d70-9f47-9044df8a60bf. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850699-5MliDfvvjIxLl66YR09A\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why do you need so much information to verify my identity?",
+   "intent": "why_verify_identity",
+   "answer": "why_verify_identity",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "cccad034-1d7a-4749-af96-7e6aaa4fdc63",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.92e-05,
+   "cache": "miss",
+   "tokens": 572,
+   "empty_retries": 7
+  },
+  {
+   "text": "Why doesn't my disposable virtual card work?",
+   "intent": "virtual_card_not_working",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id 5c9e6b62-bc7f-4bcb-b732-41075bc2cedf. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850765-fTzXOvnllVbUAIYxwWip\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can you delete my account please?",
+   "intent": "terminate_account",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 2adfe897-2d2e-4bf9-90d9-def6f4d97174. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850771-aYWYXHdFadaGTSUK9bDP\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How can I fix a problem where contactless isn't working?",
+   "intent": "contactless_not_working",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id 813d3881-9e2b-4f9f-8efb-5a55a7b51743. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850770-BYiTNS2jv3pWeTSTJn4j\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why was I charged for card payment?",
+   "intent": "card_payment_fee_charged",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id e369b323-677f-41c8-8a05-ab5466639d09. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850771-Boql8CswVQx2U9PpJs6Y\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where do I need to go in the app to enter my card info?",
+   "intent": "card_linking",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id e3ff83c2-6e58-4d5a-b607-dcb20b52aee7. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850775-zJ4EuWUUvVdHSo9lzYc8\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How long do transfers need to come through? I sent some money to a friend, she needs it urgently, but seems it's still not there yet after a couple hours.",
+   "intent": "transfer_not_received_by_recipient",
+   "answer": "transfer_timing",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "3adae47f-a388-46e5-8532-315da7eaa050",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3.01e-05,
+   "cache": "miss",
+   "tokens": 594,
+   "empty_retries": 4
+  },
+  {
+   "text": "When does the money get transferred to my account",
+   "intent": "transfer_timing",
+   "answer": "transfer_timing",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "bfc38242-6966-468c-8bb6-673ddea5fc94",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.875e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "My ecchange rate was wrong for a cash transaction.",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "answer": "wrong_exchange_rate_for_cash_withdrawal",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": false,
+   "trace_id": "9b324164-4c4d-4022-b1df-a21bdf22c990",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.68e-05,
+   "cache": "miss",
+   "tokens": 582,
+   "empty_retries": 0
+  },
+  {
+   "text": "How can I fix my card, it got declined twice.",
+   "intent": "declined_transfer",
+   "answer": "card_not_working",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "c9020116-a518-43bf-ab21-5020b22b22fe",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.92e-05,
+   "cache": "miss",
+   "tokens": 572,
+   "empty_retries": 0
+  },
+  {
+   "text": "What countries are you currently in?",
+   "intent": "country_support",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id cde125e6-be41-4f1b-840b-46f0b3a5d9a8. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850809-McLIJDJMG5zOXTaFUcdM\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "how do you determine your exchange rates because one of yours was off when i got cash",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000149. Open it with get_trace, trace_id 35e071f6-6e94-4a1c-87fe-1915ee7fe1cc. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850846-INNaEKbeibjjWwrrkC4u\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Are there any fees for adding money with an international card?",
+   "intent": "top_up_by_card_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001505. Open it with get_trace, trace_id 1292c8d1-80aa-4557-9be3-ffee9644f59c. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850851-vH3UW7DcVJxJJIIOGfYT\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My card has not arrived yet.",
+   "intent": "card_arrival",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id ddca856d-6dc4-4dc7-8cf6-faa0766fd577. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850852-Gc9pkMVO7IhuLYhG9QT4\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What age can sign up for services?",
+   "intent": "age_limit",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id bfd633fd-aaa7-40d0-8c6b-4e143804bc96. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850852-sLlCWMV8wmaSCoTdqHnS\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is it possible to receive a Visa and a MasterCard?",
+   "intent": "visa_or_mastercard",
+   "answer": "visa_or_mastercard",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "b360e26c-b806-45eb-a946-933f390d8674",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.605e-05,
+   "cache": "miss",
+   "tokens": 577,
+   "empty_retries": 0
+  },
+  {
+   "text": "what is required documents for new card process ?",
+   "intent": "contactless_not_working",
+   "answer": "get_physical_card",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "df61629b-2a0f-4d28-9023-c9a44a523671",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.905e-05,
+   "cache": "miss",
+   "tokens": 569,
+   "empty_retries": 0
+  },
+  {
+   "text": "How long does it take for a payment to go thru? I made one a few days ago and it has not been cleared yet.",
+   "intent": "pending_card_payment",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.000015. Open it with get_trace, trace_id dfe0c2e9-93dc-4407-88c0-a1fe844661e6. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850859-eQAjtcstEBMQCaYbQTyn\",\n    \"model\": \"google/gemma-3-12b-it\",\n    ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How do I find my card PIN?",
+   "intent": "get_physical_card",
+   "answer": "change_pin",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "f27dae2f-0b1a-48b2-b660-895732a6e83b",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.87e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "My top up is pending.",
+   "intent": "pending_top_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 867c2977-7cbf-4700-9f39-8a8a924597d8. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850893-H2r7j2SegyPsXlKHZuZM\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My card is about to expire. What do I need to do?",
+   "intent": "card_about_to_expire",
+   "answer": "card_about_to_expire",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "dc042fd8-e502-4a08-b529-215ccd223088",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.96e-05,
+   "cache": "miss",
+   "tokens": 576,
+   "empty_retries": 0
+  },
+  {
+   "text": "What is the exchange rate like on this app?",
+   "intent": "exchange_rate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id 10d1ce71-0678-48c5-8b17-c7c2f2b48c2d. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850929-uGJgRB1uu108CZoh5307\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What is the code I need to get into the app?",
+   "intent": "passcode_forgotten",
+   "answer": "passcode_forgotten",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "68e57d6c-3746-4ff3-9d17-c537d6ce2033",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.92e-05,
+   "cache": "miss",
+   "tokens": 572,
+   "empty_retries": 0
+  },
+  {
+   "text": "I have tried to use my card several times and it does not work.",
+   "intent": "card_not_working",
+   "answer": "card_not_working",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "ba9bbdd8-8aa4-43f8-99f4-04706b805a2f",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.935e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 0
+  },
+  {
+   "text": "Will a transfer incur a fee?",
+   "intent": "top_up_by_bank_transfer_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id e7005098-03c3-462a-87c1-59104e75de08. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850933-2mKffpZvJEAhNMfW3fw6\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?",
+   "intent": "card_payment_wrong_exchange_rate",
+   "answer": "card_payment_wrong_exchange_rate",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "52f8516e-dbe7-49c5-a3ac-42e6d75c4d18",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3.03e-05,
+   "cache": "miss",
+   "tokens": 586,
+   "empty_retries": 0
+  },
+  {
+   "text": "I relocated and need to change my personal details.",
+   "intent": "edit_personal_details",
+   "answer": "edit_personal_details",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": false,
+   "trace_id": "7393007e-bb95-49f9-89c4-0bc2fea0a292",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.585e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 0
+  },
+  {
+   "text": "What are the benefits to verifying the top-up?",
+   "intent": "verify_top_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id d89b586c-898a-48e3-ae12-2cdc3e803808. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850936-kwntksumvSCT6cXe0MSS\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How much can I expect to pay to top up a US card?",
+   "intent": "top_up_by_card_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 1be51d97-4cca-4c86-8360-6245b3ac491e. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850936-HMJoQ9T4asEiwXSd88L6\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why do I have a pending cash withdrawal?",
+   "intent": "pending_cash_withdrawal",
+   "answer": "pending_cash_withdrawal",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "7d47d98e-2195-41c9-a78e-0fb30839dd38",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.905e-05,
+   "cache": "miss",
+   "tokens": 569,
+   "empty_retries": 0
+  },
+  {
+   "text": "I need the source of my funds verified. How do I do this?",
+   "intent": "verify_source_of_funds",
+   "answer": "verify_source_of_funds",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "1a496bb9-9e7b-463c-9669-a0195db2f75d",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.965e-05,
+   "cache": "miss",
+   "tokens": 577,
+   "empty_retries": 0
+  },
+  {
+   "text": "Why am I required to verify my identity?",
+   "intent": "why_verify_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id cc82a8d9-d9f9-4628-9db0-d9a147f2b3cd. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850943-NjJC828cK5jLFw3kargK\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "i was charged when i used a us issued card. why and what cards are free to use to add money",
+   "intent": "top_up_by_card_charge",
+   "answer": "transfer_fee_charged",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "c73626e8-0ef9-429d-aaa6-5ab66fe27971",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.97e-05,
+   "cache": "miss",
+   "tokens": 582,
+   "empty_retries": 0
+  },
+  {
+   "text": "I got my new card but I am not sure if it need s activated and how?",
+   "intent": "activate_my_card",
+   "answer": "activate_my_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "a74432bf-b093-4e36-a2ff-bdf0d96a1292",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.95e-05,
+   "cache": "miss",
+   "tokens": 578,
+   "empty_retries": 0
+  },
+  {
+   "text": "What extra charges are there?",
+   "intent": "transfer_fee_charged",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001435. Open it with get_trace, trace_id c7dc158a-16b4-4987-b78c-3ccd9b3bb974. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792850977-s2hBo0b2FC0bbsmNTAGO\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is there any nearby ATM's?",
+   "intent": "atm_support",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 2b8e0af0-f64b-46ac-8f7d-eb3ffdb036c5. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851010-pCrwgs8JXpN39BKK1u0O\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Hi,I tried to get some money out but the machine was not working .The transaction still seems in progress! Can you please check what's going on.I don't want to be charged for money that I did not received.",
+   "intent": "pending_cash_withdrawal",
+   "answer": "declined_cash_withdrawal",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": false,
+   "trace_id": "37cccbd1-e8e1-47b3-bcd9-fd7eee953fa5",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.795e-05,
+   "cache": "miss",
+   "tokens": 615,
+   "empty_retries": 0
+  },
+  {
+   "text": "I was supposed to get a purchase refunded but I don't see the money in my account",
+   "intent": "Refund_not_showing_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id 53da5d82-9045-46f5-8b63-1a33d0db7389. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851016-CvBW50tMC3pfitsL7enM\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Tell me how to cancel a transfer.",
+   "intent": "cancel_transfer",
+   "answer": "cancel_transfer",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "0545dc03-4bcf-4212-8d3a-b40a09d2fc71",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.87e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "My card is gone I think it was stolen",
+   "intent": "lost_or_stolen_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id f1cae808-106c-4bcf-a64f-3bc24890ff69. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851017-LSqwTIubNmjKZMWa6mHq\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I do not have my pin",
+   "intent": "get_physical_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001435. Open it with get_trace, trace_id dd49bbf3-43db-4007-90a8-62583178ae1b. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851018-gf9SeyxTsNauEheWOdD2\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I was double charged, and the second charge is showing as \"pending\". How long will it be before I get my money back once the second charge has been refunded?",
+   "intent": "pending_card_payment",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001535. Open it with get_trace, trace_id 409fc9c7-4bec-4567-93c8-aada40eaaf29. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851024-M5GuGcKgJu1ZYXlyPt05\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I transferred the wrong amount and would like to cancel the transaction.",
+   "intent": "cancel_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id 7546225b-db4f-4b50-add0-443b9bd5e034. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851058-z9kv5NtTlqjxRRrLVkhz\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why was my card payment declined?",
+   "intent": "declined_card_payment",
+   "answer": "declined_card_payment",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": false,
+   "trace_id": "78db408a-adbe-4d3a-8739-2c2064379ce5",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.945e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 3
+  },
+  {
+   "text": "How do I use the top up app with my apple watch?",
+   "intent": "apple_pay_or_google_pay",
+   "answer": "apple_pay_or_google_pay",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "3d925c5f-76e0-4ff2-a2a3-60fd9d7d2c88",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.985e-05,
+   "cache": "miss",
+   "tokens": 577,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do i cancel my transaction?",
+   "intent": "cancel_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 625bb699-ce5e-41eb-95b7-e0f9b71a4b81. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851098-fNet4DIJHbyojTRpWj9Q\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "The ATM at Metro bank on High St. Kensington swallowed my card. How do I get it back?",
+   "intent": "card_swallowed",
+   "answer": "card_swallowed",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "c5d958d1-c21c-4a5e-bc88-c3936969efae",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.95e-05,
+   "cache": "miss",
+   "tokens": 580,
+   "empty_retries": 0
+  },
+  {
+   "text": "There is an unauthorized fee.",
+   "intent": "card_payment_fee_charged",
+   "answer": "extra_charge_on_statement",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": false,
+   "trace_id": "1bb63a19-25f9-4d0c-afca-499b743e4a17",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.595e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 1
+  },
+  {
+   "text": "reason i need to verify top up",
+   "intent": "verify_top_up",
+   "answer": "why_verify_identity",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "1b05f9d5-e8de-4ccf-81d9-8b44726e9b7f",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.895e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can you explain your exchange rate policy to me?",
+   "intent": "exchange_rate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id 3f71553b-6fae-4428-b810-42c7133ebd5b. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851101-HztBbJbhloACBCoWXHyI\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What should I do if my card is missing?",
+   "intent": "lost_or_stolen_card",
+   "answer": "lost_or_stolen_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "30e11b29-f720-4341-ae15-ab921e2bf010",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.955e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do I do an international transfer?",
+   "intent": "transfer_into_account",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id ffe439b1-3e6a-455e-b407-fc50514905b3. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851105-tMHOrinOqmVHhyAPqOa3\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why is there a fee for an extra pound in my statement?",
+   "intent": "extra_charge_on_statement",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id 281987cb-0225-4710-b7bd-4e85e3204fb9. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851106-pS73zgKJ2DpL1oLVbMH8\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How much more do I have to pay to exchange currencies?",
+   "intent": "exchange_charge",
+   "answer": "exchange_charge",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "80cedc7a-f6ab-431e-a6a0-3abad8156514",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.89e-05,
+   "cache": "miss",
+   "tokens": 570,
+   "empty_retries": 0
+  },
+  {
+   "text": "can you check why I wasn't able to top up?",
+   "intent": "top_up_failed",
+   "answer": "top_up_failed",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "6a679ed9-c5d1-4984-96c0-6c2c80241655",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "I need AUD not GBP, how do I change it?",
+   "intent": "exchange_via_app",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 164441a1-972c-4343-b5d6-2c62f92cb077. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851111-oauKhuqcc9qbmS0u9ZkW\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How do I get my PIN unlocked?",
+   "intent": "pin_blocked",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id d311c0a1-71a2-4c33-af33-aa80c1f777b0. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851139-JEZeO9d4aNNJZsatVC24\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Do you offer a discount on multiple currency exchanges?",
+   "intent": "exchange_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00002855. Open it with get_trace, trace_id 7d73c5b7-5e14-42c4-a884-17e42e2b0f90. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851180-EBSngALNsLAOmVcovLHf\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is there a fee for sending out more than one card?",
+   "intent": "getting_spare_card",
+   "answer": "getting_spare_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "9820247c-9a9a-49a9-af9a-0934164ae3de",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.92e-05,
+   "cache": "miss",
+   "tokens": 572,
+   "empty_retries": 0
+  },
+  {
+   "text": "Will you deal with SWIFT transfers?",
+   "intent": "top_up_by_bank_transfer_charge",
+   "answer": "transfer_timing",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "5dd6f1a4-b7bb-47b2-9176-f96fb85568f1",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.87e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "What kind of currencies can I use to add money?",
+   "intent": "supported_cards_and_currencies",
+   "answer": "supported_cards_and_currencies",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "9a1b74a9-1a9e-4dbf-b926-47a17e86bdaf",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.945e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "I don't think I made this charge on my debit statement.",
+   "intent": "direct_debit_payment_not_recognised",
+   "answer": "card_payment_not_recognised",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "587b307c-7084-439d-84a1-df407653284a",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.975e-05,
+   "cache": "miss",
+   "tokens": 577,
+   "empty_retries": 0
+  },
+  {
+   "text": "Next month my card will expire, do I need to order a new one?",
+   "intent": "card_about_to_expire",
+   "answer": "card_about_to_expire",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "83924843-5074-4707-a710-1b8c9da2a4e1",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.97e-05,
+   "cache": "miss",
+   "tokens": 578,
+   "empty_retries": 7
+  },
+  {
+   "text": "I have completed a transfer but it is not showing up.",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 390a99ae-4511-4937-ac37-1e202a61e4b2. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851188-5QaA5nahJYGxja3ScPRJ\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I made a cash withdrawal but the pending status is taking forever.",
+   "intent": "pending_cash_withdrawal",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id bfcc87c2-eb58-429a-8953-1a7127dfca07. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851188-cm2Se3QaLOEyOw2EAKVe\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I got charged and extra fee when I transferred money so why was I charged?",
+   "intent": "transfer_fee_charged",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001485. Open it with get_trace, trace_id c3f055a5-9c84-4e75-b3d1-3b7af8df04df. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851192-mCqFpqOY9v3Ix6htlIEy\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Help me check where the funds came from.",
+   "intent": "verify_source_of_funds",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id b8aa65c7-667c-44a7-af03-2e4cec00b0be. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851219-Bt8zehgvueGXIyfzWfkV\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I have a duplicate payment showing up on the app. How do I stop myself being charged for the thing twice?",
+   "intent": "transaction_charged_twice",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id 53a500e0-3467-4f75-9656-760ba6a10506. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851251-IGtFPsoW0XsM3A4qBmuU\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My card payment is pending.",
+   "intent": "pending_card_payment",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001435. Open it with get_trace, trace_id 677efa83-ed83-475d-8143-5df9f25f36bb. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851261-fRTpNIWI57Bwkr1nlYfa\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Hey I want to buy some crypto but the app doesn't allow me to! What's the issue, I really want to exchange this",
+   "intent": "beneficiary_not_allowed",
+   "answer": "exchange_via_app",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "1af29f4d-4fcf-4d1c-8043-d57435dd5440",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3.005e-05,
+   "cache": "miss",
+   "tokens": 589,
+   "empty_retries": 0
+  },
+  {
+   "text": "I found my card, can I add it to the app?",
+   "intent": "card_linking",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id 080ae396-2d6d-4884-be44-b9a0735fca00. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851268-O0vlBD4PDc15FVgaSYMq\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How can I change my Tholepin ?",
+   "intent": "change_pin",
+   "answer": "change_pin",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "0d56e1ab-739a-4edc-bc9a-142acd8f10b4",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.875e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "Since my id hasn't been verified, when can I use my account?",
+   "intent": "why_verify_identity",
+   "answer": "unable_to_verify_identity",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "d98a8040-2fe6-423f-8d94-f5963ff7e955",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.97e-05,
+   "cache": "miss",
+   "tokens": 578,
+   "empty_retries": 0
+  },
+  {
+   "text": "What is the limit to a top-up?",
+   "intent": "top_up_limits",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id 6840319d-7f8a-4640-9000-2852467c0c24. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851273-iiZP8XUDfYXcusvgjn9l\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My phone was stolen",
+   "intent": "lost_or_stolen_phone",
+   "answer": "lost_or_stolen_phone",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "1b80abad-1f30-4ef0-974e-172f82f8866a",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can you freeze my card because someone used it while I was out of town. I did not make these purchases.",
+   "intent": "compromised_card",
+   "answer": "compromised_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "4c92fa00-4a7f-49d6-846e-4f3d9543b733",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.96e-05,
+   "cache": "miss",
+   "tokens": 582,
+   "empty_retries": 0
+  },
+  {
+   "text": "I didn't get all the cash I requested for at the ATM",
+   "intent": "wrong_amount_of_cash_received",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001515. Open it with get_trace, trace_id a15765b3-17e9-4900-bdc1-5b02d1e4f78e. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851275-EQX89nNduTNdHYPUiqIo\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Are both Visa and Mastercard accepted?",
+   "intent": "visa_or_mastercard",
+   "answer": "supported_cards_and_currencies",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "fb2fce1b-52b9-4cc6-8142-d7553dfab3f0",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 569,
+   "empty_retries": 3
+  },
+  {
+   "text": "I noticed an extra $1 charge on my statement, can you tell me why that is?",
+   "intent": "extra_charge_on_statement",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id 6786c0d5-9126-4ee2-9568-6ca7cdfdc55c. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851317-l4vouOfEh6GuR75cKfZ2\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What methods can I use to top up my account?",
+   "intent": "top_up_by_cash_or_cheque",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id e41b4772-c4ce-4394-a5f5-ff928679e210. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851332-UQA3nzUoSwiWe5KZDQoR\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why would I be charged more than once for the same transaction?",
+   "intent": "transaction_charged_twice",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000151. Open it with get_trace, trace_id 5e2ada5c-4d19-4685-9ce1-384fa234667f. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851342-vkTZHTOntRTBdd1BmSgP\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why can't I use my virtual card for subscription services?",
+   "intent": "virtual_card_not_working",
+   "answer": "virtual_card_not_working",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "2d812f0a-73b0-4843-9e07-f7059b9812f8",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.955e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can I get one of your cards in the EU",
+   "intent": "country_support",
+   "answer": "supported_cards_and_currencies",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "499a8bc3-24a9-4997-a023-a8c8166b340d",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.94e-05,
+   "cache": "miss",
+   "tokens": 572,
+   "empty_retries": 0
+  },
+  {
+   "text": "I would like to link my card. How do I do it?",
+   "intent": "card_linking",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 505bb675-b791-48cf-bc29-e2a7a4de3959. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851352-0L90mtpPa2os7NUy8nQc\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "When I made a purchase last Saturday, I was charged extra. Did I receive the right exchange rate?",
+   "intent": "card_payment_wrong_exchange_rate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id b2346ce6-331f-435a-90aa-f1838c17ff47. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851353-tzQqEt1monwqRUh0dgMo\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can it automatically top-up money if there isn't much left?",
+   "intent": "automatic_top_up",
+   "answer": "automatic_top_up",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "8da8fdeb-7e09-4766-9708-9734ed47f0ab",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.935e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do I use my new card?",
+   "intent": "activate_my_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 66bb0c5b-3acf-4cea-8002-a4e80074e1ad. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851357-17BfuiZQUQhznGaywVzF\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can I use a bank transfer to refill my account?",
+   "intent": "transfer_into_account",
+   "answer": "top_up_by_bank_transfer_charge",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "bce2601a-0bc0-464f-a815-ce206c6df76a",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3.005e-05,
+   "cache": "miss",
+   "tokens": 577,
+   "empty_retries": 0
+  },
+  {
+   "text": "Where did the extra fee on my statement come from?",
+   "intent": "extra_charge_on_statement",
+   "answer": "extra_charge_on_statement",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "ac6fac0c-6907-4f3d-93ea-d94d10ecdf25",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.945e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "I think something may have happened that caused a charge to show up twice.",
+   "intent": "transaction_charged_twice",
+   "answer": "transaction_charged_twice",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "3e7b398f-4bde-4e8d-9811-d1366a262756",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.935e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 0
+  },
+  {
+   "text": "can you limit my top up?",
+   "intent": "top_up_limits",
+   "answer": "top_up_limits",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "75ee5911-ecbe-4d26-8c04-7c47a0655ab6",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.895e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "How man currencies can I hold?",
+   "intent": "fiat_currency_support",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 8e165c23-4b58-40bf-babf-d8797a9bf3d0. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851404-8rx2P57ZCFxSlAfwt46j\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What is going on? My top-up is still pending. I use your system all the time but now it is just showing as pending.",
+   "intent": "pending_top_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000151. Open it with get_trace, trace_id 9bcfc7b2-d50b-4c85-955a-92c71c9f9fac. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851413-dh6hXHeLDS3ZXhKDTrAZ\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Please explain why my card was declined?",
+   "intent": "declined_card_payment",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 2fbff909-cc32-4d44-90b3-e76109292837. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851423-QEbFMYqfYrF36PfmExnl\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why have I been charged twice for the same transaction?",
+   "intent": "transaction_charged_twice",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id 4661bb6e-ac55-4a0a-8e26-3dedf393cbab. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851433-f0gsH1Nae4M1EBJ0voom\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Will it automatically top-up or do I need to do that manually if there isn't much cash left?",
+   "intent": "automatic_top_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id f0bce887-14e9-4ca8-b238-45f5c2937747. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851434-9zpRMBeWibhNYEDM030Q\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I've been waiting longer than expected for my card.",
+   "intent": "card_arrival",
+   "answer": "card_delivery_estimate",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "d52d406a-7306-4ac4-990b-75c7444a527b",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.58e-05,
+   "cache": "miss",
+   "tokens": 576,
+   "empty_retries": 0
+  },
+  {
+   "text": "How did you come up with your exchange rates?",
+   "intent": "exchange_rate",
+   "answer": "exchange_rate",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "caefb280-787b-4592-afed-c5c33d61aa4b",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.88e-05,
+   "cache": "miss",
+   "tokens": 568,
+   "empty_retries": 0
+  },
+  {
+   "text": "I would like some help getting a refund back from a seller. It still isn't showing up on my statement and I requested this a long time ago. I'm not sure why it's not returned yet. Can you assist me in getting this money back?",
+   "intent": "Refund_not_showing_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000156. Open it with get_trace, trace_id 66ede507-a3d4-4a64-9191-2a8392665608. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851441-LKmOSDclO5MVrmMhisVS\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How long do i have to wait for a transfer to reach my account?",
+   "intent": "transfer_timing",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id 324b5dc3-8bef-4f85-a9c7-dab5e2885c6f. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851485-vPmTE59I8U0fjthd3Ve0\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I don't recall making that payment?",
+   "intent": "card_payment_not_recognised",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 0e53125a-ae78-4e4d-acfc-761b0b24c5b1. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851494-BjJ0QasQx228Bkz06PLa\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Do I need to establish I am paid in GBP before a transfer?",
+   "intent": "receiving_money",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 2802b1ec-4910-465d-8362-391c13eab068. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851504-XLlOtoBbPtEMljRFtrAr\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Your top-up function isn't working, it still says pending even though I know my card works.",
+   "intent": "pending_top_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 94f5492b-d066-40a7-9fd0-9bc8c92f9bbd. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851515-0a7DvbvJUxiQQzNpFMxp\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I made a card payment and a fee is showing up?",
+   "intent": "card_payment_fee_charged",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001505. Open it with get_trace, trace_id b11f0f9e-d8eb-432e-8c24-deb5c82c91bb. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851516-iZcudScHMsVaZr5t2PJG\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I need a new Pin how do I go about that?",
+   "intent": "change_pin",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id b2ecf754-c22d-4498-8651-2665fdb0f7b1. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851522-wHf5gRIbV30EsPtBUiMt\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How long does it take to get my card? Can I choose when to receive it?",
+   "intent": "card_delivery_estimate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001495. Open it with get_trace, trace_id c0fc4f05-3456-4359-be47-345b06b43c02. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851567-DLQJGGL4tGJmhRQIR125\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where can I go to modify my detail?",
+   "intent": "edit_personal_details",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id ab2acf8b-656f-40ce-8a9c-584825ef4a02. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851576-7GOSBkAUaNUKrpW9UTDw\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is my card accepted everywhere?",
+   "intent": "card_acceptance",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001435. Open it with get_trace, trace_id 3cc04feb-2a52-4114-85bb-819a021ee1ae. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851586-yd8do6L1O43xP0mCxuG3\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I was charged extra for a withdrawal",
+   "intent": "cash_withdrawal_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 6d5449bb-6186-478c-95ff-9daab5976dac. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851596-bh2fpJdmOeawe7nNHVsY\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I transferred money and was charged and want to know why.",
+   "intent": "transfer_fee_charged",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 41b68aaa-ff34-4c36-a888-b607f2c00baf. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851597-iV86XHYZB7gKQKpo3MoK\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Tell me how to go about activating my new card?",
+   "intent": "activate_my_card",
+   "answer": "activate_my_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "f70d17b0-19f4-4318-8bec-39b66437cf4f",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.915e-05,
+   "cache": "miss",
+   "tokens": 571,
+   "empty_retries": 0
+  },
+  {
+   "text": "Think someone has took money out with my card. What shall I do?",
+   "intent": "cash_withdrawal_not_recognised",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id d4b5c78f-4a93-413e-9ecb-63bc8f7e5de4. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851605-ly9dttvQlayCsf4EXtvW\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Do I need to replace my card if it didn't work when I tried to pay contactless at the shop today?",
+   "intent": "contactless_not_working",
+   "answer": "contactless_not_working",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "bca3a77b-c122-4330-b66b-8e1872992ec8",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.995e-05,
+   "cache": "miss",
+   "tokens": 585,
+   "empty_retries": 0
+  },
+  {
+   "text": "Where is the card PIN?",
+   "intent": "get_physical_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001435. Open it with get_trace, trace_id b549878c-3e60-4d4f-9b98-3ab7cfdc8c9e. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851649-ZJwcuRlDoO2Jk3Y626Yv\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My transfer keeps failing and I just want to transfer the money can you please make it work?",
+   "intent": "failed_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id 31bb7425-d514-4039-bb4b-5ee30496cb00. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851657-BxUusdqo9H3oIrSqz9jN\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I may have a fraud charge on my debit statement.",
+   "intent": "direct_debit_payment_not_recognised",
+   "answer": "card_payment_not_recognised",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "68d140e8-594d-4937-802a-1a89dd05c8ab",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.96e-05,
+   "cache": "miss",
+   "tokens": 574,
+   "empty_retries": 0
+  },
+  {
+   "text": "show me how to top up with my card",
+   "intent": "topping_up_by_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 3dcbbb05-1e92-45e3-8fd8-239bebbf3fc7. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851669-UTicsObaHpZGN5y0Q5Av\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I tried to buy something online yesterday but it wouldn't stop saying declined. Tried again today but same thing happened. What's Broken?",
+   "intent": "declined_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000151. Open it with get_trace, trace_id 1f1b1abe-7955-4f51-8dfb-bd04cd5527e7. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851678-CsLwyLxCzI0gU9UjXWGP\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "There is a card payment I do not recognise.",
+   "intent": "card_payment_not_recognised",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id 6c830dad-ed1b-4b79-bd67-59a2bda36e70. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851678-rBE1OsqyITVZUFaI0VqB\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How do I enable auto-top up?",
+   "intent": "automatic_top_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 818051be-c461-454b-b7dc-f5fdc45b5d63. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851686-tNtRxqdKFCKZAyvl1XoU\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can I use American Express to add money into my account?",
+   "intent": "supported_cards_and_currencies",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id c920840d-c8a7-403d-ba6a-b3d50ffcbbe0. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851729-RCkKPyoQSru0139RthyF\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How come you charge for cash withdrawals? I withdrew cash after buying groceries today, and there seems to be a new fee",
+   "intent": "cash_withdrawal_charge",
+   "answer": "cash_withdrawal_charge",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "63a75757-c113-4be5-9ecf-d9ffc93cfda6",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.98e-05,
+   "cache": "miss",
+   "tokens": 584,
+   "empty_retries": 7
+  },
+  {
+   "text": "What should I do if I see a payment I didn't make?",
+   "intent": "card_payment_not_recognised",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id 8c5b5a39-a589-4128-85b9-7708770555fa. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851751-p1q1rg4M0GC0dIf51AzB\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "This company sucks! Can you terminate my account?",
+   "intent": "terminate_account",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001495. Open it with get_trace, trace_id d01701e1-9cf9-4a2e-a242-bd5cd93315a8. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851759-0kwIZsarkNPoCYKAbjZu\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I recently made a payment, and it is showing up in my account as \"pending\". What does that mean?",
+   "intent": "pending_card_payment",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id 499c988c-09e4-4c42-af0a-0769ab8036d8. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851761-hZnka5JWjm0xW04HjCTT\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "There appears to have been a reversion in my top up",
+   "intent": "top_up_reverted",
+   "answer": "top_up_reverted",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "eb6a10c7-e567-4e08-b51a-cbd2ef064510",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.93e-05,
+   "cache": "miss",
+   "tokens": 572,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can I make many disposable cards per day?",
+   "intent": "disposable_card_limits",
+   "answer": "disposable_card_limits",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "99043301-addd-4bcf-a4da-6785b1cd4e22",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.92e-05,
+   "cache": "miss",
+   "tokens": 570,
+   "empty_retries": 0
+  },
+  {
+   "text": "I was wondering whether exchanging currencies can be done on this app.",
+   "intent": "exchange_via_app",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id ffc19c6c-1068-4c12-af1d-442d07a759eb. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851771-YDrpDi95we8bHijEiLfD\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "About this card PIN?",
+   "intent": "get_physical_card",
+   "answer": "change_pin",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "5f9dd6e9-0858-4880-89f7-f72346428787",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.855e-05,
+   "cache": "miss",
+   "tokens": 563,
+   "empty_retries": 0
+  },
+  {
+   "text": "How can I lookup where funds came from?",
+   "intent": "verify_source_of_funds",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id a9d5b65d-21fa-414d-87d1-94cecb22e7dd. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851803-lZOyA1YgbhdwGnXCjUcJ\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where can I go to get a virtual card?",
+   "intent": "getting_virtual_card",
+   "answer": "getting_virtual_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "45478d26-a366-44b6-865c-8bd0dc966ccf",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.585e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 0
+  },
+  {
+   "text": "What is needed to prove my identity?",
+   "intent": "verify_my_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id a6e0792e-9fd1-4220-b761-fb8f9132491f. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851813-X7LoTL5Srl4rvbL2XZbr\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can I use my card anywere?",
+   "intent": "card_acceptance",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001485. Open it with get_trace, trace_id 5bff2dfa-c755-4819-bc12-73f99572b5ab. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851832-IoEFpnMHguDo7mMsoNbs\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I can't get money out of the ATM",
+   "intent": "declined_cash_withdrawal",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id 1c390d95-958f-428d-a38e-f491b243043c. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851840-udzNDaQoTKHRWT7cOt4m\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I made a transaction this morning and would like to revert it.",
+   "intent": "cancel_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id 77f41cce-f93f-4661-b0ad-35e891938ce4. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851841-uzeOlVL64akBCB38sHJR\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I do not remember the code, what should I do?",
+   "intent": "passcode_forgotten",
+   "answer": "passcode_forgotten",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "0def3c98-125f-4090-b7f0-10bcab24e967",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.595e-05,
+   "cache": "miss",
+   "tokens": 577,
+   "empty_retries": 0
+  },
+  {
+   "text": "Why was my account deducted from a seller when I didn't approve of it?",
+   "intent": "direct_debit_payment_not_recognised",
+   "answer": "card_payment_not_recognised",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "99883655-d7e7-44bc-bfdd-73ede811f33e",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.99e-05,
+   "cache": "miss",
+   "tokens": 580,
+   "empty_retries": 0
+  },
+  {
+   "text": "Where can I get a second card?",
+   "intent": "getting_spare_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 3325fe53-5dc0-4f63-9789-2a2d845bf0d2. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851854-fN3GbY5AzST5tEMxk32u\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What do I do if I think someone managed to get my card information?",
+   "intent": "compromised_card",
+   "answer": "compromised_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "31d90114-199f-402d-a142-563f9ec3f3a6",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.92e-05,
+   "cache": "miss",
+   "tokens": 574,
+   "empty_retries": 0
+  },
+  {
+   "text": "I tried to withdraw money but I was declined!",
+   "intent": "declined_cash_withdrawal",
+   "answer": "declined_cash_withdrawal",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "18ad0177-73d3-4be5-96b0-096ce92e63f3",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 571,
+   "empty_retries": 0
+  },
+  {
+   "text": "Any fee for topping up?",
+   "intent": "top_up_by_card_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id b04dfe5d-0efa-4174-be6d-3e9c0d9a1a6b. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851889-CxahQzFOpCgbWrxsK0fy\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My address has updated and I need to change it.",
+   "intent": "edit_personal_details",
+   "answer": "edit_personal_details",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "7bc3be63-3b98-43e8-af22-afc418e0dddb",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.915e-05,
+   "cache": "miss",
+   "tokens": 571,
+   "empty_retries": 0
+  },
+  {
+   "text": "Why are you declining my payment? Everything was fine.",
+   "intent": "declined_card_payment",
+   "answer": "declined_card_payment",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "61a428f0-e831-48df-91f0-faf8c4ce9673",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.93e-05,
+   "cache": "miss",
+   "tokens": 572,
+   "empty_retries": 1
+  },
+  {
+   "text": "I did what you told me earlier and contacted the seller for a refund directly, but nothing is happening! It's been a week and I still haven't got anything. Please just give me back my money",
+   "intent": "Refund_not_showing_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000154. Open it with get_trace, trace_id 7fc523b3-4705-45a6-975b-29a8d78c865d. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851901-89HidmsxGQAWVAl1Y79q\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Some cash is showing up in my app that I did not get.",
+   "intent": "cash_withdrawal_not_recognised",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 25ce9ecb-7ee3-4acf-8fdb-033037b6495f. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851914-cwEu1CLqmfmEUrJ5YlRt\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is there a way to obtain a virtual card?",
+   "intent": "getting_virtual_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id a73aa4e1-aab0-4719-a322-d46f4c97fec2. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851922-5SnhFE6S4aHZKjCfGLLL\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What would the approximate delivery date be if I transferred something urgently to China?",
+   "intent": "transfer_timing",
+   "answer": "transfer_timing",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "01b7ef6f-95cc-48ff-927a-fdb701b879ab",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.905e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "Do you know the closest ATM?",
+   "intent": "atm_support",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 228af52b-d825-4fca-9fef-0980dd612e5b. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851924-OTon2FiAN0m9mldFiwn2\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I do not wish to verify my identity.",
+   "intent": "why_verify_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000149. Open it with get_trace, trace_id 5394d05b-579f-4563-8954-b5994ef6c332. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851935-F5wHZ1zvoi7mXkvZWkwy\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I cannot find my credit card.",
+   "intent": "lost_or_stolen_card",
+   "answer": "lost_or_stolen_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "0a3be1f5-1401-4fa5-b540-5fadb0f99673",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.94e-05,
+   "cache": "miss",
+   "tokens": 570,
+   "empty_retries": 0
+  },
+  {
+   "text": "This is very frustrating. I can't get my card to work on any ATM I try and I've tried 3 of them so far. What's going on? Can you please fix this issue immediately?",
+   "intent": "declined_cash_withdrawal",
+   "answer": "card_not_working",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "3c0fb3a4-ccbb-4837-a6a7-2ff5a03e26fe",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3.085e-05,
+   "cache": "miss",
+   "tokens": 605,
+   "empty_retries": 0
+  },
+  {
+   "text": "What currencies will this app exchange?",
+   "intent": "exchange_via_app",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 7b6e8816-7136-4e53-958e-3119587a8530. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851978-kfV165hjWYsc1CLXBA06\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I want to set a new PIN",
+   "intent": "change_pin",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 7ee2fd51-474b-4634-916c-bb8db2fc5800. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792851988-4Y4hHlFxIf6L7wvhpYha\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why was my transfer charged fees?",
+   "intent": "transfer_fee_charged",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000284. Open it with get_trace, trace_id 30ef3b78-2d52-409f-8cf5-5a098f80ea87. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852006-NzpcsK993aEnfWfyrQKW\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can you assist me with unblocking my PIN? I put it in wrong too many times.",
+   "intent": "pin_blocked",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000154. Open it with get_trace, trace_id 4a5fb4a8-8e60-40a3-9f11-92beba3afa95. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852014-BpE5oIRprcwqjM1bMR3z\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I asked for 100 but only got 20.",
+   "intent": "wrong_amount_of_cash_received",
+   "answer": "refund_not_showing_up",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "28cef634-7c48-49cb-a72d-c9abb75df392",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.96e-05,
+   "cache": "miss",
+   "tokens": 576,
+   "empty_retries": 0
+  },
+  {
+   "text": "I'v exhausted all the of times I can try my PIN",
+   "intent": "pin_blocked",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000151. Open it with get_trace, trace_id 32ad18f2-3e7b-4e01-9a96-abfbe65831ac. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852020-tzTdoARb02zdIVIAj9Sy\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "cash deposit to my account has shown a red flag.",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "answer": "balance_not_updated_after_cheque_or_cash_deposit",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "cd9ae282-a43f-4495-96f1-64c6bb226394",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3.08e-05,
+   "cache": "miss",
+   "tokens": 582,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can I use this account to receive my salary?",
+   "intent": "receiving_money",
+   "answer": "transfer_into_account",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "64e0ee50-5ca6-4794-bc4f-3295129d03f6",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.91e-05,
+   "cache": "miss",
+   "tokens": 570,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do the disposable cards work?",
+   "intent": "get_disposable_virtual_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id e5aaab30-0ed5-47c1-b4ba-d585a7de0ad9. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852032-Pr7Z4cUt0VbBeg97oxgM\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My phone is lost.  What do I do to prevent someone from using the app?",
+   "intent": "lost_or_stolen_phone",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001535. Open it with get_trace, trace_id 970e7a04-0db5-43d6-b596-da0456007002. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852072-rC2E07xWV7noop845uTb\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "The ATM won't give me my card back.",
+   "intent": "card_swallowed",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id 8e417655-7609-4307-8f3e-7056e898d63a. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852081-d65BblkpzC0jErooXtmE\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How long does it take for a money transfer to show?",
+   "intent": "pending_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001505. Open it with get_trace, trace_id b47b032a-9bf4-49ea-8919-ef72d18699d9. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852099-SteSAa3XQ65qFYoS5kbJ\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "can I have a non virtual card?",
+   "intent": "order_physical_card",
+   "answer": "get_physical_card",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "37b33faa-b855-4a09-84ba-5b043ac1114f",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.575e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "I made a transaction and it is taking a very long time to go through.",
+   "intent": "transfer_not_received_by_recipient",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001485. Open it with get_trace, trace_id feb46396-893b-42e1-a9b5-17f3f06d5fb7. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852113-rGJScGKlJAOt2ku8uCb4\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My card doesn't accept any transaction at all. What's wrong??",
+   "intent": "card_not_working",
+   "answer": "card_not_working",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "431aacf1-8c76-4ff6-a6b6-b88158fba85f",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.94e-05,
+   "cache": "miss",
+   "tokens": 576,
+   "empty_retries": 0
+  },
+  {
+   "text": "My child needs a card, how can I add them to the account I currently have?",
+   "intent": "getting_spare_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001535. Open it with get_trace, trace_id 1893ea72-8961-4f96-b24b-70ca771da6b9. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852115-y7Nx54Fx1hOGUBhYq0Tt\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I'm not sure why my card payment was cancelled, can you find out why?",
+   "intent": "reverted_card_payment?",
+   "answer": "declined_card_payment",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "6c14fef1-5a3a-4384-a9ca-5215882a48c5",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.965e-05,
+   "cache": "miss",
+   "tokens": 579,
+   "empty_retries": 0
+  },
+  {
+   "text": "If I want a physical card, do I have to pay anything?",
+   "intent": "order_physical_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 9309fffd-0f8e-492a-ae09-b7ad12ad6bb4. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852129-n6rbuHNHgNO9tw5oemje\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Do you happen to do exchanges of EUR?",
+   "intent": "fiat_currency_support",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id c5e90f13-b75d-4631-bc38-eb0435599192. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852162-wcFez3LrlcnfSvXM0SFx\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can I use this card at an ATM?",
+   "intent": "atm_support",
+   "answer": "atm_support",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "27c3c5d9-81e6-4049-b5e8-003d92f31aaa",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.875e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "How long should my new card take to arrive?",
+   "intent": "card_arrival",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001495. Open it with get_trace, trace_id 92d0fff2-ef3f-4b3a-bea6-ba136afa247a. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852176-5gHyuXPL9n2FnxbeKRs4\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My top up failed.",
+   "intent": "top_up_failed",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id 75d8f237-97c8-454d-a161-1e14f474e154. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852193-vdRKyLtyeuQnLzHSY0XK\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What countries do you do business in?",
+   "intent": "country_support",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001485. Open it with get_trace, trace_id 0ad71afe-1010-41ff-b586-027b77b39f01. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852202-k9UR5WoSRQ0IUsadBHV3\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How do I get the contactless feature to work for my card?",
+   "intent": "contactless_not_working",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id 7a35fcdc-ed59-44d0-89c9-5acb5fe43acf. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852207-AFh0rmM2M7W7GWiHEA66\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I was mugged yesterday and they took everything.  I can't access my app.  What are my next steps?",
+   "intent": "lost_or_stolen_phone",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001495. Open it with get_trace, trace_id 02c7daa8-00ac-4199-88da-48525aeec737. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852219-AbJ3hZ6PAmuQLJ2LAI48\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I tried to make a transfer but it failed",
+   "intent": "failed_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 1b6fe271-a1a6-44f5-a4c1-4abac4e63510. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852252-vPhOPakBxMz08Dtyyzj7\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why am I not able to verify my id?",
+   "intent": "unable_to_verify_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001495. Open it with get_trace, trace_id fc091322-271e-4527-8ff9-c599a6c662f6. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852263-rDqKCLtY5BYcd8cCByQ9\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why can't I activate my card?",
+   "intent": "activate_my_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000149. Open it with get_trace, trace_id 9e13904e-cbae-49c0-b54d-bfde57eff6d1. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852278-6Z3C0vlL0Zzbn1KmeQ9Z\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Do you work with all fiat currencies?",
+   "intent": "fiat_currency_support",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 54cf1285-8227-4a3d-8bd0-57a35c8aeee9. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852288-wKQUzccEKsb1Z3z5SJIm\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where is my transfer from [country]?",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 0d0a38b3-320a-4c08-8f7b-3f641c29606b. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852290-vSL91npIXMmLRLvOVAVQ\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "If my card is trapped in the ATM, what do I do?",
+   "intent": "card_swallowed",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001515. Open it with get_trace, trace_id 6d99036e-d68f-40ec-82d8-940e4275fb2d. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852300-P1itFI83h5Iv9RFcnQq2\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I transferred some money and it didint arrive",
+   "intent": "transfer_not_received_by_recipient",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 28490598-9cc5-4f11-9410-53e0234c4adb. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852333-bw9n5Gw8pdTPsveesYem\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How do I get refunded?",
+   "intent": "request_refund",
+   "answer": "request_refund",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "d8519667-c944-456d-b461-f6b74c37c195",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.86e-05,
+   "cache": "miss",
+   "tokens": 564,
+   "empty_retries": 0
+  },
+  {
+   "text": "Do you do Visa or Mastercard?",
+   "intent": "visa_or_mastercard",
+   "answer": "visa_or_mastercard",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "737f0670-d6a3-4d60-87a7-d68dda631276",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.585e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "What is the process for using my credit card to transfer money?",
+   "intent": "topping_up_by_card",
+   "answer": "transfer_into_account",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "69698abb-188f-486d-970e-e1ff03c91dec",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 0
+  },
+  {
+   "text": "What should I do if the passcode doesn't work for me?",
+   "intent": "passcode_forgotten",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001515. Open it with get_trace, trace_id f89391ca-c631-42f8-8dba-75642540b255. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852352-hgicEUQPipJNws5e1FQ1\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where's accounting for my cash withdrawal?",
+   "intent": "pending_cash_withdrawal",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id c6afa023-3c7a-4ec2-aebe-9517e23ccc12. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852364-DOD4i3th1KUQud7zXTr9\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is there a reason why my transaction is taking so long?",
+   "intent": "transfer_not_received_by_recipient",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 44a0eadc-1bff-4e1e-8385-a0f7be0c3fb9. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852382-6UFSg2Vqic6LfNmL0Eoo\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is there anyway, I can get a disposable virtual card?",
+   "intent": "get_disposable_virtual_card",
+   "answer": "get_disposable_virtual_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "09161923-4d56-4ec4-996c-e6b597fe265d",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.965e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do I verify a top-up?",
+   "intent": "verify_top_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id dd246116-a3c3-4d1d-9334-2aab35f22de1. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852388-yOvyTuFFSPVfmV5UFBNk\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I think someone is using my card to make transactions I don't remember.",
+   "intent": "compromised_card",
+   "answer": "compromised_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "0c8b7535-690c-4b23-92bf-fde9d4b7af28",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.925e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 0
+  },
+  {
+   "text": "How long can an EU transfer take?",
+   "intent": "pending_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id e8e2b54a-8322-4c65-8080-aa12ffbb2d54. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852398-EaHrhqq1D3NSjy2U9qnL\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My card is just not working at this time.",
+   "intent": "virtual_card_not_working",
+   "answer": "card_not_working",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "da95c738-f23c-41c6-9c15-7d09ab577b22",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.91e-05,
+   "cache": "miss",
+   "tokens": 570,
+   "empty_retries": 0
+  },
+  {
+   "text": "I would like use the bank transfer, but I don't understand the process, can you please explain, topping up?",
+   "intent": "transfer_into_account",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000149. Open it with get_trace, trace_id ced1578c-f5a7-4ac7-85d1-57cea6d610de. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852431-2oj7yK16vo68TjYb1lhP\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "There is a Direct Debit that I don't recognize.",
+   "intent": "direct_debit_payment_not_recognised",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id 2882b273-16b9-47b3-9b03-679e68af0d52. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852447-UGv3LL8ssVY3pIaKMMJa\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Does delivery to the US take long?",
+   "intent": "card_delivery_estimate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id ff0116d0-78b7-47cf-b5f1-8d738b0536b5. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852460-tUY8GxaWlO4YfPdYmfaS\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Do you have a limit to top ups?",
+   "intent": "top_up_limits",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 9980f475-2aa4-4fc7-9a4b-867846e4a5c6. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852478-0shV3ipBmCu8VyveQ0D9\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is the system down? I've been trying to do a transfer and have failed?",
+   "intent": "failed_transfer",
+   "answer": "failed_transfer",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "2193aa3e-e780-4225-8e88-5df167ddc85f",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.92e-05,
+   "cache": "miss",
+   "tokens": 576,
+   "empty_retries": 0
+  },
+  {
+   "text": "Are cheques accepted to my account? Mine didn't seem to work.",
+   "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000152. Open it with get_trace, trace_id d627e83c-984e-4606-b1c4-a804dd4b6885. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852486-8UVeYccgBuRlJaRkfA49\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can you freeze my card it was stolen",
+   "intent": "lost_or_stolen_card",
+   "answer": "lost_or_stolen_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "a7aa60eb-738f-46f5-ad0e-08cd6a1345ef",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.945e-05,
+   "cache": "miss",
+   "tokens": 571,
+   "empty_retries": 0
+  },
+  {
+   "text": "How many card payments can I use on a disposable card?",
+   "intent": "disposable_card_limits",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001465. Open it with get_trace, trace_id d9a972c8-93d8-40bb-92a9-554554ae5a68. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852498-UA2VjMdJ7kCf33q056AY\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I have tried transferring money numerous times.  All I keep getting is an error message.  Can you tell me what is going on and how this van be fixed?",
+   "intent": "beneficiary_not_allowed",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001535. Open it with get_trace, trace_id 61731ef5-d5d5-4d35-bad1-b50ffb4476d2. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852523-8q3yESHgzR8B4cgmx2iF\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I've tried my card a bunch of times and it never worked.",
+   "intent": "card_not_working",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id 605dee71-ba33-40aa-b362-c5737d8d2c6f. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852539-e7kwloMer2BPzNCi4Zxy\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My card has been swallowed by an ATM",
+   "intent": "card_swallowed",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001445. Open it with get_trace, trace_id 4c8bb9ee-05f4-4211-8cac-774ef6f5e54e. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852549-vJHCMXbHWEXSA5U6D2MO\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What is the minimum age?",
+   "intent": "age_limit",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001475. Open it with get_trace, trace_id 1de2e198-5142-4b34-98f2-f8a0a40283eb. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852570-86ci1r3Ka0xQIZqq2mb8\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "If i'm not in the UK, can I still get a card?",
+   "intent": "country_support",
+   "answer": "country_support",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "4c08ec12-bbe0-4cd5-9a13-966c30e360e7",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.91e-05,
+   "cache": "miss",
+   "tokens": 574,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do I update my current residence details?",
+   "intent": "edit_personal_details",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id c332afbb-27d3-4c25-b78b-973d6fab112a. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852583-y4jYlgXFg3xPz1LcSWO1\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How can I top up with Google Pay?",
+   "intent": "apple_pay_or_google_pay",
+   "answer": "apple_pay_or_google_pay",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "a037efea-0354-4e53-977c-62f06d738432",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.965e-05,
+   "cache": "miss",
+   "tokens": 573,
+   "empty_retries": 3
+  },
+  {
+   "text": "What is the highest limit for Auto Top?",
+   "intent": "automatic_top_up",
+   "answer": "top_up_limits",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "abb0ed3b-9ca7-473f-b280-8a72b67c7a92",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.905e-05,
+   "cache": "miss",
+   "tokens": 569,
+   "empty_retries": 0
+  },
+  {
+   "text": "The money would not transfer to a beneficiary.",
+   "intent": "beneficiary_not_allowed",
+   "answer": "declined_transfer",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "7605df89-dc56-4fb5-8374-ce26ae52a0c5",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.89e-05,
+   "cache": "miss",
+   "tokens": 568,
+   "empty_retries": 0
+  },
+  {
+   "text": "Why was the transfer declined?",
+   "intent": "declined_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001435. Open it with get_trace, trace_id febbb4ed-bb70-49e7-bd33-e2b0c0b3ca51. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852613-drHoRqaWvL3XwnFhKW2C\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "What will I be charged for a physical card?",
+   "intent": "order_physical_card",
+   "answer": "get_physical_card",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "f401bbe7-fe0e-45bb-91c7-a5572ad6cccc",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.91e-05,
+   "cache": "miss",
+   "tokens": 570,
+   "empty_retries": 1
+  },
+  {
+   "text": "I need to know the time frame that is typical for a transfer from a UK account. I just made a transfer and it doesn't appear. I want to make sure everything is okay.",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "answer": "transfer_timing",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "479ec702-715b-4efb-9e26-e563f55b780b",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3.025e-05,
+   "cache": "miss",
+   "tokens": 597,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do I go about setting up an account for my daughter?",
+   "intent": "age_limit",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id e2a2b61b-376e-4d0b-9610-10ac4e137bd1. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852623-FINQqezR1P5CSAwYF7lt\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is there a maximum amount of top-ups?",
+   "intent": "top_up_limits",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001495. Open it with get_trace, trace_id 1a6fbfc0-1002-429b-ae4f-ee44b75d37ff. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852631-m6W8Ngw8CF0XAlGQmzY8\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "I need to know the cost and when I will receive a new card to replace an old one.",
+   "intent": "card_about_to_expire",
+   "answer": "card_delivery_estimate",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "4718178b-daa3-4105-b91e-bbd4dc774b44",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.62e-05,
+   "cache": "miss",
+   "tokens": 584,
+   "empty_retries": 1
+  },
+  {
+   "text": "Is there any discount for someone that exchanges currencies frequently?",
+   "intent": "exchange_charge",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id d50b5a5e-e8bf-4c48-ae7a-d712c2701eda. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852647-7jTbJxiD5INuASAYZQpW\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Hi, I would like to file a claim for an inquiry. I am a frequent customer of the company in question and have never had any issue with my purchases, payments, or otherwise. However, the price deducted for an item I purchased a couple of weeks ago has been returned to my checking account. Was there an issue with my payment? The item has already been delivered to me.",
+   "intent": "reverted_card_payment?",
+   "answer": "request_refund",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "d3e505bd-e35d-41da-b249-78e7ae4eba32",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.895e-05,
+   "cache": "miss",
+   "tokens": 641,
+   "empty_retries": 0
+  },
+  {
+   "text": "When will the $1 transaction be credited to me?",
+   "intent": "extra_charge_on_statement",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id 22b5b1db-808f-4be7-8c91-d45520685c30. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852659-rZspag6UwZqThD74qoE3\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "which kind of documentation do I need for identity check?",
+   "intent": "verify_my_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id bd6a969d-2fd6-420e-8dbf-03ca9f8e8da6. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852670-Fo4VbsWzB5mZP3yW47TW\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Hello. Can you tell me if you use Visa or Mastercard?",
+   "intent": "visa_or_mastercard",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000151. Open it with get_trace, trace_id ae90f416-31ba-41ca-8020-1d9c3ead260a. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852694-DPEZ9s7HLC5W1cBRnIk5\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Let me know the steps for the identity checks",
+   "intent": "verify_my_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id f5cbd0a1-18ca-4b7f-8644-fb0e83139dd5. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852706-UzSZGAgE9cXFQM6tQBDQ\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Do you accept checks?",
+   "intent": "top_up_by_cash_or_cheque",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000143. Open it with get_trace, trace_id 3d5166a2-1fd7-4f7c-b392-dd5337536ef6. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852713-Xw0bUikebioudUalvjhB\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "How come I can't take money out of the ATM?",
+   "intent": "declined_cash_withdrawal",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id abb1dabf-0376-4115-8723-1cb1148c26a7. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852728-NGgiGM5vwF0hLhmztiia\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where is the virtual card?",
+   "intent": "getting_virtual_card",
+   "answer": "getting_virtual_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "96d16081-be10-4a15-94b9-91fe09767316",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.89e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "OMG!  I'm trying to load my card and it wont top up!  I desperately need the money either on my card or in my bank, where is it?",
+   "intent": "pending_top_up",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001505. Open it with get_trace, trace_id 908d2c8d-5f00-4c39-ae90-1d5368825f83. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852741-wvHRXtnfzHHCqH6yGh6N\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Where did your guys exchange rates come from?",
+   "intent": "exchange_rate",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id a0bf90f5-b093-449e-bed6-3f3113d6f219. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852752-o2T6aDPVRM4Hley1YlsW\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why doesn't my balance reflect my transfer",
+   "intent": "balance_not_updated_after_bank_transfer",
+   "answer": "balance_not_updated_after_bank_transfer",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "44179191-9006-4445-8cec-8d49855106b8",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.995e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 1
+  },
+  {
+   "text": "How do I freeze my card? I think someone is using it to make a bunch of online transactions.",
+   "intent": "compromised_card",
+   "answer": "compromised_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "7e628651-67bd-4c03-8b3c-788f7ab047fb",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.95e-05,
+   "cache": "miss",
+   "tokens": 580,
+   "empty_retries": 0
+  },
+  {
+   "text": "How do I know if my top up was unsuccessful?",
+   "intent": "top_up_failed",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.000015. Open it with get_trace, trace_id 128cd2af-e45a-4e8f-b643-45c348dcfcd7. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852781-GTzhlAFA3K1d2x7YvhxG\",\n    \"model\": \"google/gemma-3-12b-it\",\n    ",
+   "empty_retries": 8
+  },
+  {
+   "text": "There is a strange payment on my statement. What should I do?",
+   "intent": "card_payment_not_recognised",
+   "answer": "card_payment_not_recognised",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "4fab38ce-9d23-4f67-b87b-43f79c1d9027",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.61e-05,
+   "cache": "miss",
+   "tokens": 582,
+   "empty_retries": 6
+  },
+  {
+   "text": "Do you accept other currencies besides US Dollars?",
+   "intent": "supported_cards_and_currencies",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 025eb53a-d6e2-41c5-91e1-b0d28754d52e. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852794-LMkZcUKhxXWxyLiMGuCY\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "in china, need new card",
+   "intent": "card_about_to_expire",
+   "answer": "get_physical_card",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "1d313214-df70-4b8b-9fc3-92a2624f85ca",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.89e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "Why do you need code verification for my top up?",
+   "intent": "verify_top_up",
+   "answer": "verify_top_up",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "0e761718-5b28-4447-8d01-ecaa761df593",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.915e-05,
+   "cache": "miss",
+   "tokens": 571,
+   "empty_retries": 0
+  },
+  {
+   "text": "My card's frozen, what can I do?",
+   "intent": "pin_blocked",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000146. Open it with get_trace, trace_id 64d6cbfa-392d-4e73-8b74-03853a58f3a1. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852811-8ZZA0fgq9QgcGfGsVuRv\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can I use my Apple Watch to to top up?",
+   "intent": "apple_pay_or_google_pay",
+   "answer": "apple_pay_or_google_pay",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "7f628f93-7933-4b74-bf60-8da467cea0f5",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.975e-05,
+   "cache": "miss",
+   "tokens": 575,
+   "empty_retries": 3
+  },
+  {
+   "text": "app doesnt think its me",
+   "intent": "unable_to_verify_identity",
+   "answer": "unable_to_verify_identity",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "0f04d9ae-0508-4715-8841-d3731f19b19e",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.915e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "I would appreciate that someone let me know when there is an extra charge for payments. I was checking the app earlier and saying a charge on one of my payments that was additional that no one made me aware of before.",
+   "intent": "card_payment_fee_charged",
+   "answer": "extra_charge_on_statement",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": false,
+   "trace_id": "26bddb48-90a3-418b-9b17-180ef8586f07",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.785e-05,
+   "cache": "miss",
+   "tokens": 611,
+   "empty_retries": 0
+  },
+  {
+   "text": "I'm not sure why my top up request was denied",
+   "intent": "top_up_failed",
+   "answer": "top_up_failed",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "656b4129-5bdc-47d2-9f1b-f6fb12f16888",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.92e-05,
+   "cache": "miss",
+   "tokens": 572,
+   "empty_retries": 0
+  },
+  {
+   "text": "My account has a weird withdrawal.",
+   "intent": "cash_withdrawal_not_recognised",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id fa27ddd1-c958-458f-90c6-1e6378056088. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852836-qNHIUAjslNy7864h7VZW\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My salary is in GBP; how can I note this in the app?",
+   "intent": "receiving_money",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id 2c8887c7-ebc0-4a13-87dc-9aa17a7cd45f. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852837-7D8dX8ycSMs3f9toAGn8\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "If my phone is missing, can I block someone from using the app?",
+   "intent": "lost_or_stolen_phone",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000148. Open it with get_trace, trace_id 8e5d1f82-30d6-4343-94b5-75c60701c42f. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852838-lRpO6wLiajVqND1pKTGx\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "The conversion rate on the ATM that I used with foreign currency was wrong.",
+   "intent": "wrong_exchange_rate_for_cash_withdrawal",
+   "answer": "wrong_exchange_rate_for_cash_withdrawal",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": false,
+   "trace_id": "f6ad027e-5288-4059-98ee-e05aeeae5a22",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.7e-05,
+   "cache": "miss",
+   "tokens": 586,
+   "empty_retries": 0
+  },
+  {
+   "text": "how do i add money with my apple watch",
+   "intent": "apple_pay_or_google_pay",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id eefc81a8-e9e7-4db0-9499-af155d2bf696. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852863-dBNpkMuHjQgjVChrIjQ2\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "My friends want to top up my account",
+   "intent": "topping_up_by_card",
+   "answer": "receiving_money",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "dc03896d-18d0-4431-8ad0-f1f9ffe3a37c",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.87e-05,
+   "cache": "miss",
+   "tokens": 566,
+   "empty_retries": 0
+  },
+  {
+   "text": "please delete my account, your services are not up to par.",
+   "intent": "terminate_account",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000147. Open it with get_trace, trace_id f9ce5514-e2be-4dd1-b826-033224e71fe3. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852876-dj2J09eEOWxy0YEydoe3\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Is it possible to change to another currency?",
+   "intent": "exchange_via_app",
+   "answer": "exchange_rate",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "a5edd555-b6d2-438d-a99c-7b759b68031f",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.875e-05,
+   "cache": "miss",
+   "tokens": 567,
+   "empty_retries": 0
+  },
+  {
+   "text": "Something went wrong with my withdrawal. The amount of money isn't right.",
+   "intent": "wrong_amount_of_cash_received",
+   "answer": "wrong_amount_of_cash_received",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "18624173-62f5-4753-aee3-d8d3c71b6888",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 3e-05,
+   "cache": "miss",
+   "tokens": 580,
+   "empty_retries": 0
+  },
+  {
+   "text": "Can I transfer money to my credit card?",
+   "intent": "topping_up_by_card",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id d48337df-8dbf-4327-8680-539844241d74. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852895-lKxzRESHTv6ptsG3lKrK\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "You keep declining my transfers? It's always been working really well so far, but when I tried to buy something just now the card got declined. I tried couple times already but same thing.",
+   "intent": "declined_transfer",
+   "answer": "declined_card_payment",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": false,
+   "trace_id": "7f021eca-7cf1-4504-8595-cdb2e0357ee0",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 1.75e-05,
+   "cache": "miss",
+   "tokens": 606,
+   "empty_retries": 0
+  },
+  {
+   "text": "What should I do to verify my identity?",
+   "intent": "verify_my_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000145. Open it with get_trace, trace_id 4659a2b5-ced8-4128-aa3b-c58f12df05da. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852917-mSUM7m6DBBgneUWi2l5k\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "The app will not let me into my account.",
+   "intent": "unable_to_verify_identity",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00001455. Open it with get_trace, trace_id 25aa8997-8027-40db-be49-cb81b4e10866. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852918-DQehxdQrhYfnhp4Qj5IV\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Why does the app revert a payment?",
+   "intent": "reverted_card_payment?",
+   "answer": "top_up_reverted",
+   "correct": false,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "6bd9c214-efee-4cdc-bf06-09f09d5372fb",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.915e-05,
+   "cache": "miss",
+   "tokens": 569,
+   "empty_retries": 0
+  },
+  {
+   "text": "When will the transfer go through?",
+   "intent": "pending_transfer",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.0000144. Open it with get_trace, trace_id 89ba4ca0-0bd5-4ad1-8a54-7ac57b4726a2. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852921-J6qGLB2pM1CEMG6ljhM5\",\n    \"model\": \"google/gemma-3-12b-it\",\n   ",
+   "empty_retries": 8
+  },
+  {
+   "text": "Can I create a disposable virtual card?",
+   "intent": "get_disposable_virtual_card",
+   "answer": "get_disposable_virtual_card",
+   "correct": true,
+   "valid_label": true,
+   "well_formed": true,
+   "trace_id": "6dd1f903-895f-4fdd-8c94-e9068f03fe1b",
+   "provider_model": "google/gemma-3-12b-it",
+   "cost_usd": 2.945e-05,
+   "cache": "miss",
+   "tokens": 571,
+   "empty_retries": 0
+  },
+  {
+   "text": "I lost my password",
+   "intent": "passcode_forgotten",
+   "error": "Ran \"promptsloth-banking77\"@lazy on google/gemma-3-12b-it for $0.00002825. Open it with get_trace, trace_id b3891e97-6e55-4bd3-a243-28396cabfd97. Reply: (no text content \u2014 check tool_calls)\n\n{\n  \"completion\": {\n    \"id\": \"gen-1792852946-DuQgvozgaWqharXXIsxO\",\n    \"model\": \"google/gemma-3-12b-it\",\n  ",
+   "empty_retries": 8
+  }
+ ]
+}
