@@ -32,7 +32,7 @@ Nap 1 fixed the reply format (the 4B model wrapped about 35% of v1 answers in br
 | `mcp.py` | A 40-line MCP JSON-RPC client |
 | `promptsloth.py` | `setup`, `dataset`, `optimize`, `report`, `promote` and `eval`, each one an MCP tool call |
 | `analyse.py` | Lenient and strict accuracy per cell, and an exact McNemar test per change |
-| `chart.py` | Draws `images/heldout-accuracy.png` from `results/` |
+| `chart.py`, `charts_extra.py` | Draw the charts in `images/` from `results/` |
 | `results/` | Every held-out run and both optimizer reports behind the article |
 
 The `results/` folder also holds Gemma 3 12B runs. They are left out of the tables because one upstream provider returned empty replies for that model.
